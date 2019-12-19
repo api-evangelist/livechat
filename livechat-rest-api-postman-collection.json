@@ -1,0 +1,2624 @@
+{
+    "id": "cce2d5aa983a7faa15aecceb7d250b46",
+    "name": "LiveChat REST API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "1b5a315dbb22c66a9e441c5a8e7c0a45",
+            "name": "Delete a webhook",
+            "url": "httpsapi.livechatinc.com\/\/webhooks\/12345",
+            "description": "Deletes a webhook with the given ID.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6881fa8ea05e1afe513d4819c1e13f2",
+            "name": "Chat ratings report",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/ratings",
+            "description": "Shows how many chats have been rated and how they have been rated during a specified period.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "group",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "08e0c6544d05235080b4084416d61b4d",
+            "name": "List all canned responses1",
+            "url": "httpsapi.livechatinc.com\/\/canned_responses\/ABC123",
+            "description": "Returns the list of all currently set canned responses.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d6c0bb0e23242c16304cc3ffa6e29e5",
+            "name": "Update a canned response",
+            "url": "httpsapi.livechatinc.com\/\/canned_responses\/ABC123",
+            "description": "Updates the specified canned response by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tags[0]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "610d0508fd025b7bd7d8f5eae9141df9",
+            "name": "Remove a canned response",
+            "url": "httpsapi.livechatinc.com\/\/canned_responses\/ABC123",
+            "description": "Removes a canned response with the given CANNED_RESPONSE_ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "41bea0dd620790a8959db513f28ddab6",
+            "name": "Update a group",
+            "url": "httpsapi.livechatinc.com\/\/groups\/ABC123",
+            "description": "Updates the specified group by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agents[0]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agents[1]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc59ba6a147023d9131ad0c2368775d6",
+            "name": "Remove a group",
+            "url": "httpsapi.livechatinc.com\/\/groups\/ABC123",
+            "description": "Removes a group with the given GROUP_ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "7a536d8e776aabebbc354ce1e3624251",
+            "name": "Chat engagement",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/engagement",
+            "description": "This report shows you where you get your chats from. They can come from i.e. automatic invitations, manual invitations or the visitors can start the chats by themselves.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agent",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "489aab20592a9287df75a659e9984058",
+            "name": "List all greetings",
+            "url": "httpsapi.livechatinc.com\/\/greetings",
+            "description": "Returns the list of all greetings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "groups",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "95a2a5bc26743f7b68016f82c2981472",
+            "name": "Create a new greeting",
+            "url": "httpsapi.livechatinc.com\/\/greetings",
+            "description": "Use this function to create a new greeting.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rules[0][type]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rules[0][value]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rules[0][operator]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rules[1][type]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rules[1][value]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rules[1][operator]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "aa88175dbec4e1f4a436b62f58c21469",
+            "name": "Display configured webhooks",
+            "url": "httpsapi.livechatinc.com\/\/webhooks",
+            "description": "Returns a list of webhooks that have been created in a LiveChat account.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e55844b0abd382d30cdc71fd963feba",
+            "name": "Create a new webhook",
+            "url": "httpsapi.livechatinc.com\/\/webhooks",
+            "description": "Creates a new webhook.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "event_type",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "data_types[]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "url",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7bdc9788dd0c437383ab6a57385f340",
+            "name": "Greetings",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/greetings",
+            "description": "Returns the \u201cgreetings to chats to goals\u201d conversion rates report.\n\ndisplayed is the number of displayed greetings. accepted tells you how many chats resulted from these greetings. goals tells you how many goals resulted from these greetings.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "a836535b15a0937479033f86efda88b0",
+            "name": "List all tags",
+            "url": "httpsapi.livechatinc.com\/\/tags",
+            "description": "Returns tags from all groups.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "group",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "c9b0b1f71880012344d35373d5487fca",
+            "name": "Add a tag",
+            "url": "httpsapi.livechatinc.com\/\/tags",
+            "description": "Adds a new tag. Note that only the owner and the admins are authorized to use this.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tag",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "author",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "b32fc924e7b3b33367d761d390232889",
+            "name": "Get a single agent details",
+            "url": "httpsapi.livechatinc.com\/\/agents\/john@public.com",
+            "description": "Returns complete details of the agent for the given LOGIN.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "8597e7348711245292d76df6a0c034c6",
+            "name": "Get a single agent details",
+            "url": "httpsapi.livechatinc.com\/\/agents\/john@public.com",
+            "description": "Returns complete details of the agent for the given LOGIN.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "job_title",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d51a920f414c8db17c3ad1d900ae048",
+            "name": "Remove an agent",
+            "url": "httpsapi.livechatinc.com\/\/agents\/john@public.com",
+            "description": "Removes an agent.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "75cd32bff94a3039b50df4c3e1ec60b3",
+            "name": "Get list of tickets",
+            "url": "httpsapi.livechatinc.com\/\/tickets",
+            "description": "Returns all tickets.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "status",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "c9ca273503d2282f37181c3cb5c21d84",
+            "name": "Create a ticket",
+            "url": "httpsapi.livechatinc.com\/\/tickets",
+            "description": "Creates a new ticket.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "subject",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "message",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "requester[mail]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "requester[name]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "94747ea171d049a68a8c8d977c6f7409",
+            "name": "Solved tickets",
+            "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/solved_tickets",
+            "description": "Shows the number of the tickets solved during the specified period.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "8bb9bb272b8583430125a246bdf14c9c",
+            "name": "Chats first response time",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/first_response_time",
+            "description": "The average amount of time it takes the agents to respond to a new chat over a specified period of time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "a848ecbad8691cf25cc7b4222d64c090",
+            "name": "List all canned responses",
+            "url": "httpsapi.livechatinc.com\/\/canned_responses",
+            "description": "Returns the list of all currently set canned responses.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cccc768f849b233721f712766249960",
+            "name": "Create a new canned response",
+            "url": "httpsapi.livechatinc.com\/\/canned_responses",
+            "description": "Creates a new canned response.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "text",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags[0]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tags[1]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "548ef7d130b96c9a949fd3f244226256",
+            "name": "Chat Ranking",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/ratings\/ranking",
+            "description": "Shows the ratio of good to bad ratings for each operator.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "57120f68aec40d479384f780c37c6ab2",
+            "name": "List all groups",
+            "url": "httpsapi.livechatinc.com\/\/groups",
+            "description": "Returns all created groups.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "5acde47e8b157fb56b1c07049bf4e286",
+            "name": "Create a new group",
+            "url": "httpsapi.livechatinc.com\/\/groups",
+            "description": "Creates a new group in your license.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agents[0]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agents[1]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "d8f8b8fcbd4278cf85b51fa92d748109",
+            "name": "Get single chat",
+            "url": "httpsapi.livechatinc.com\/\/chats\/ABC123",
+            "description": "Returns a single chat item for the given CHAT_ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "e121b9b2fa369d5ddd4ba9985610ec0e",
+            "name": "Ticket sources",
+            "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/ticket_sources",
+            "description": "Shows the distribution of the tickets between various channels.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "e0054bb465aecffea9a978f80ee68724",
+            "name": "Get a single greeting",
+            "url": "httpsapi.livechatinc.com\/\/greetings\/ABC123",
+            "description": "Returns the specified greeting.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "c2726b2227a8f5dfe30c1bea57f40c6f",
+            "name": "Remove a greeting",
+            "url": "httpsapi.livechatinc.com\/\/greetings\/ABC123",
+            "description": "Removes a greeting.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7d12d01e7d1bb7196a90675715c300c",
+            "name": "Get a single group details",
+            "url": "httpsapi.livechatinc.com\/\/groups\/{group_id}",
+            "description": "Returns group details for the given GROUP_ID.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b2e68a8afcb051abbd991a7321a62a8",
+            "name": "Total chats",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/total_chats",
+            "description": "Shows how many chats occurred during the specified period.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agent",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "1daf4567f009a6474efc61c99f778343",
+            "name": "List all goals",
+            "url": "httpsapi.livechatinc.com\/\/goals",
+            "description": "Returns all currently set goals. The active parameter indicates whether a goal is enabled or not.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "3694cee86e6d1640e9a7beb84e72a216",
+            "name": "Add a new goal",
+            "url": "httpsapi.livechatinc.com\/\/goals",
+            "description": "Creates a new goal.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "url",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "match_type",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "17fff5e619eaa596f2031acbb0c444dd",
+            "name": "Get list of chats",
+            "url": "httpsapi.livechatinc.com\/\/chats",
+            "description": "Returns all ended chats.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "de79d964120ea8741c7389e9c36093a3",
+            "name": "List all agents",
+            "url": "httpsapi.livechatinc.com\/\/agents",
+            "description": "Returns all LiveChat agents list",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "37bf2b632a323916fc935314dd2567ca",
+            "name": "Create a new agent",
+            "url": "httpsapi.livechatinc.com\/\/agents",
+            "description": "Creates a new agent in your license.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "login",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "8e0801e6bff93593cc3ba83831a5d0fc",
+            "name": "Get a single goal details",
+            "url": "httpsapi.livechatinc.com\/\/goals\/ABC123",
+            "description": "Returns the goal details for the given GOAL_ID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ecd3a9f778051b53f70b4bdfda876ec",
+            "name": "Update a goal",
+            "url": "httpsapi.livechatinc.com\/\/goals\/ABC123",
+            "description": "Updates the specified goal by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\nThe GOAL_ID is obtained from the goals list.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "active",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "39c2232f9586202a82feb63d4bd0018c",
+            "name": "Remove a goal",
+            "url": "httpsapi.livechatinc.com\/\/goals\/ABC123",
+            "description": "Removes a goal with the given GOAL_ID.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "2141965c242c6bd7e5d4f5d73e4ab32b",
+            "name": "Ticket ratings report",
+            "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/ratings",
+            "description": "Shows the tickets that were rated during the specified period.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "group",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "a696448019b5455ae506de5f6898efd0",
+            "name": "Update ticket tags",
+            "url": "httpsapi.livechatinc.com\/\/tickets\/5FUED\/tags",
+            "description": "Updates tags associated with the ticket.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tag[]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a1291ac23afdbd0c2c97869299b81ed",
+            "name": "Ticket Ranking",
+            "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/ratings\/ranking",
+            "description": "Shows the ratio of good to bad ratings for each operator.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "adf6c5ed8bb27cb413a04ef5c82f3f32",
+            "name": "Chats response time",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/response_time",
+            "description": "The average amount of time it takes the agents to respond to a new message in a chat during a specified period.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e221bca784870c3bbf68ec69ea369c0",
+            "name": "Availability",
+            "url": "httpsapi.livechatinc.com\/\/reports\/availability",
+            "description": "Shows how long an agent (or a group or the whole account) was available for chatting during a specified period. When querying for one day, the results are shown in minutes per every hour, otherwise in hours for each day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed1dea7bb478b0c1daf1c85f4023f0b4",
+            "name": "Update chat tags",
+            "url": "httpsapi.livechatinc.com\/\/chats\/ABC123\/tags",
+            "description": "This method updates the tags assigned to a chat.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "tag[0]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tag[1]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "cab8a0b9cc7e14ad4b5dee2743297fd3",
+            "name": "List all visitors",
+            "url": "httpsapi.livechatinc.com\/\/visitors",
+            "description": "Returns a list of the visitors on the pages with the tracking code installed.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "state",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group[]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "cf03bc767304dac76583d407d0f0318f",
+            "name": "Tickets resolution time",
+            "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/resolution_time",
+            "description": "Shows the resolution time of the tickets that were solved during the specified period.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "9aeab382609c5d750a11fc057c5fbb95",
+            "name": "Delete a tag",
+            "url": "httpsapi.livechatinc.com\/\/tags\/support",
+            "description": "Deletes a tag from the chosen group. The agents will no longer be able to tag chats and tickets using this tag.\n\nDeleting a tag will not remove it from the archived chats and tickets.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "group",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "f65586aaca885fedfa4d0e59255db0d4",
+            "name": "Goals",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/goals",
+            "description": "Shows the number of reached goals.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "goal",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "94e956fd49ec87ca07bb7e817c8b5007",
+            "name": "Queued visitors",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/queued_visitors",
+            "description": "Shows how many visitors waited in the queue and how many abandoned the queue or proceeded to chats",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "7a1d37607fe080e7841422624acd3230",
+            "name": "Queue waiting times",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/queued_visitors\/waiting_times",
+            "description": "Shows the Minimum, Average and Maximum waiting time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "ca50b2a3b8ef957d9454b6f52147fa31",
+            "name": "Chatting time",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/chatting_time",
+            "description": "Shows how much time an agent (or a group) spent on chatting during a specified period. When querying for one day, the results are shown in minutes per every hour, otherwise in hours for each day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "d1abb9a23dc57a606ed0c173556ad3b2",
+            "name": "Mark a goal as successful",
+            "url": "httpsapi.livechatinc.com\/\/goals\/ABC123\/mark_as_successful",
+            "description": "The GOAL_ID is obtained from the goals list.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "visitor_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6091019162973192bf57519fb46fd65",
+            "name": "Get status",
+            "url": "httpsapi.livechatinc.com\/\/status",
+            "description": "Returns the current LiveChat status. Available return values: online, offline.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "5aa12439c80e0436d902834a0224799c",
+            "name": "Update greeting",
+            "url": "httpsapi.livechatinc.com\/\/greetings\/2491",
+            "description": "Use this request to change the name or message of a greeting.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "properties[greeting",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "ba123604ae3ac046d4371bc742b76a8c",
+            "name": "Tickets first response time",
+            "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/first_response_time",
+            "description": "Shows the time of the first response to the tickets that were responded to for the first time during the specified period.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "agent",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "b409b606550bb1d1f2713d857187e63a",
+            "name": "Send chat transcript to e-mail",
+            "url": "httpsapi.livechatinc.com\/\/chats\/ABC123\/send_transcript",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e7a86f37ad877ca1014d491cd3ba77f",
+            "name": "Number of simultaneous chats",
+            "url": "httpsapi.livechatinc.com\/\/reports\/chats\/agents_occupancy",
+            "description": "This request shows the maximum number of concurrent chats that happened at the same hour on a particular day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "weekday",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8a377f76c7308f6f19683fffd265680",
+            "name": "Add custom visitor details",
+            "url": "httpsapi.livechatinc.com\/\/visitors\/S1352647457.ac951bfe2e\/details",
+            "description": "Displays additional information about a visitor in LiveChat apps.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "license_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "token",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields[0][name]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "fields[0][value]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "9369eb5d19ab3c8fb0479e1b9194b0c2",
+            "name": "Get single ticket",
+            "url": "httpsapi.livechatinc.com\/\/tickets\/5FUED",
+            "description": "Returns a single ticket item for the given TICKET_ID",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        },
+        {
+            "id": "e63203f087ccd889415eed315df61d5d",
+            "name": "New tickets",
+            "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/new_tickets",
+            "description": "Shows the number of the tickets created during the specified period.\n\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "date_from",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "date_to",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "X",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "rawModeData": ""
+        }
+    ]
+}
