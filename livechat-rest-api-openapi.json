@@ -1,0 +1,1570 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "LiveChat REST API",
+        "description": "## Introduction\n\nWelcome to the LiveChat API documentation!\n\nOur API provides a set of flexible tools which you can use to create new outstanding projects. We smile a bit more each time we see skilled developers unleash their creativity!\n\nPlease note that this documentation refers to the latest API version: 2.0. If you are looking for the previous version, check out the deprecated API 1.0 documentation.\n\n## Basic API usage\n\nAll LiveChat API requests start with  `https:\/\/api.livechatinc.com\/`.\n\nPlease note that all LiveChat API requests must use \\`HTTPS\\` protocol.\n\nThe next segment of the URL path depends on the type of your request. For example, use:  `https:\/\/api.livechatinc.com\/agents`  to get or modify the agents data.\n\nAll requests must have \\`X-API-VERSION\\` header set to the number of the version that you'd like to use. The most recent version is 2.\n\n## Authentication\n\nTwo common authentication methods are supported:  **OAuth 2.0**  and  **API key**.\n\n### OAuth 2.0\n\nOAuth 2.0 au",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.livechatinc.com\/"
+    ],
+    "paths": {
+        "\/webhooks\/12345": {
+            "delete": {
+                "summary": "Delete a webhook",
+                "description": "Deletes a webhook with the given ID.\n\n",
+                "operationId": "Webhooks12345Delete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/ratings": {
+            "get": {
+                "summary": "Chat ratings report",
+                "description": "Shows how many chats have been rated and how they have been rated during a specified period.\n\n",
+                "operationId": "ReportsChatsRatingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/canned_responses\/ABC123": {
+            "get": {
+                "summary": "List all canned responses1",
+                "description": "Returns the list of all currently set canned responses.",
+                "operationId": "CannedResponsesABC123Get",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a canned response",
+                "description": "Updates the specified canned response by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\n",
+                "operationId": "CannedResponsesABC123Put",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tags[0]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Remove a canned response",
+                "description": "Removes a canned response with the given CANNED_RESPONSE_ID.",
+                "operationId": "CannedResponsesABC123Delete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups\/ABC123": {
+            "put": {
+                "summary": "Update a group",
+                "description": "Updates the specified group by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\n",
+                "operationId": "GroupsABC123Put",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "agents[0]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "agents[1]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Remove a group",
+                "description": "Removes a group with the given GROUP_ID.",
+                "operationId": "GroupsABC123Delete2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/engagement": {
+            "get": {
+                "summary": "Chat engagement",
+                "description": "This report shows you where you get your chats from. They can come from i.e. automatic invitations, manual invitations or the visitors can start the chats by themselves.",
+                "operationId": "ReportsChatsEngagementGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "agent",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/greetings": {
+            "get": {
+                "summary": "List all greetings",
+                "description": "Returns the list of all greetings.",
+                "operationId": "GreetingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groups",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a new greeting",
+                "description": "Use this function to create a new greeting.",
+                "operationId": "GreetingsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "rules[0][type]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "rules[0][value]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "rules[0][operator]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "rules[1][type]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "rules[1][value]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "rules[1][operator]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/webhooks": {
+            "get": {
+                "summary": "Display configured webhooks",
+                "description": "Returns a list of webhooks that have been created in a LiveChat account.\n\n",
+                "operationId": "WebhooksGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a new webhook",
+                "description": "Creates a new webhook.\n\n",
+                "operationId": "WebhooksPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "event_type",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "data_types[]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "url",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/greetings": {
+            "get": {
+                "summary": "Greetings",
+                "description": "Returns the \u201cgreetings to chats to goals\u201d conversion rates report.\n\ndisplayed is the number of displayed greetings. accepted tells you how many chats resulted from these greetings. goals tells you how many goals resulted from these greetings.\n\n",
+                "operationId": "ReportsChatsGreetingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/tags": {
+            "get": {
+                "summary": "List all tags",
+                "description": "Returns tags from all groups.\n\n",
+                "operationId": "TagsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add a tag",
+                "description": "Adds a new tag. Note that only the owner and the admins are authorized to use this.\n\n",
+                "operationId": "TagsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tag",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "author",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "group",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/agents\/john@public.com": {
+            "get": {
+                "summary": "Get a single agent details",
+                "description": "Returns complete details of the agent for the given LOGIN.",
+                "operationId": "AgentsJohnPublicComGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Get a single agent details",
+                "description": "Returns complete details of the agent for the given LOGIN.",
+                "operationId": "AgentsJohnPublicComPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "job_title",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Remove an agent",
+                "description": "Removes an agent.",
+                "operationId": "AgentsJohnPublicComDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/tickets": {
+            "get": {
+                "summary": "Get list of tickets",
+                "description": "Returns all tickets.\n\n",
+                "operationId": "TicketsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a ticket",
+                "description": "Creates a new ticket.\n\n",
+                "operationId": "TicketsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "subject",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "message",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "requester[mail]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "requester[name]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/tickets\/solved_tickets": {
+            "get": {
+                "summary": "Solved tickets",
+                "description": "Shows the number of the tickets solved during the specified period.\n\n",
+                "operationId": "ReportsTicketsSolvedTicketsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/first_response_time": {
+            "get": {
+                "summary": "Chats first response time",
+                "description": "The average amount of time it takes the agents to respond to a new chat over a specified period of time.",
+                "operationId": "ReportsChatsFirstResponseTimeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/canned_responses": {
+            "get": {
+                "summary": "List all canned responses",
+                "description": "Returns the list of all currently set canned responses.",
+                "operationId": "CannedResponsesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a new canned response",
+                "description": "Creates a new canned response.\n\n",
+                "operationId": "CannedResponsesPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "text",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "tags[0]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "tags[1]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/ratings\/ranking": {
+            "get": {
+                "summary": "Chat Ranking",
+                "description": "Shows the ratio of good to bad ratings for each operator.",
+                "operationId": "ReportsChatsRatingsRankingGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups": {
+            "get": {
+                "summary": "List all groups",
+                "description": "Returns all created groups.\n\n",
+                "operationId": "GroupsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a new group",
+                "description": "Creates a new group in your license.\n\n",
+                "operationId": "GroupsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "agents[0]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "agents[1]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/chats\/ABC123": {
+            "get": {
+                "summary": "Get single chat",
+                "description": "Returns a single chat item for the given CHAT_ID.",
+                "operationId": "ChatsABC123Get",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/tickets\/ticket_sources": {
+            "get": {
+                "summary": "Ticket sources",
+                "description": "Shows the distribution of the tickets between various channels.",
+                "operationId": "ReportsTicketsTicketSourcesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/greetings\/ABC123": {
+            "get": {
+                "summary": "Get a single greeting",
+                "description": "Returns the specified greeting.\n\n",
+                "operationId": "GreetingsABC123Get",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Remove a greeting",
+                "description": "Removes a greeting.",
+                "operationId": "GreetingsABC123Delete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups\/{group_id}": {
+            "get": {
+                "summary": "Get a single group details",
+                "description": "Returns group details for the given GROUP_ID.\n",
+                "operationId": "GroupsByGroupIdGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/total_chats": {
+            "get": {
+                "summary": "Total chats",
+                "description": "Shows how many chats occurred during the specified period.\n\n",
+                "operationId": "ReportsChatsTotalChatsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "agent",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/goals": {
+            "get": {
+                "summary": "List all goals",
+                "description": "Returns all currently set goals. The active parameter indicates whether a goal is enabled or not.",
+                "operationId": "GoalsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add a new goal",
+                "description": "Creates a new goal.\n\n",
+                "operationId": "GoalsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "url",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "match_type",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/chats": {
+            "get": {
+                "summary": "Get list of chats",
+                "description": "Returns all ended chats.",
+                "operationId": "ChatsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/agents": {
+            "get": {
+                "summary": "List all agents",
+                "description": "Returns all LiveChat agents list",
+                "operationId": "AgentsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a new agent",
+                "description": "Creates a new agent in your license.\n\n",
+                "operationId": "AgentsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "login",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/goals\/ABC123": {
+            "get": {
+                "summary": "Get a single goal details",
+                "description": "Returns the goal details for the given GOAL_ID.",
+                "operationId": "GoalsABC123Get",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a goal",
+                "description": "Updates the specified goal by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\nThe GOAL_ID is obtained from the goals list.",
+                "operationId": "GoalsABC123Put",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "active",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Remove a goal",
+                "description": "Removes a goal with the given GOAL_ID.\n\n",
+                "operationId": "GoalsABC123Delete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/tickets\/ratings": {
+            "get": {
+                "summary": "Ticket ratings report",
+                "description": "Shows the tickets that were rated during the specified period.\n\n",
+                "operationId": "ReportsTicketsRatingsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/tickets\/5FUED\/tags": {
+            "put": {
+                "summary": "Update ticket tags",
+                "description": "Updates tags associated with the ticket.\n\n",
+                "operationId": "Tickets5FUEDTagsPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tag[]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/tickets\/ratings\/ranking": {
+            "get": {
+                "summary": "Ticket Ranking",
+                "description": "Shows the ratio of good to bad ratings for each operator.\n\n",
+                "operationId": "ReportsTicketsRatingsRankingGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/response_time": {
+            "get": {
+                "summary": "Chats response time",
+                "description": "The average amount of time it takes the agents to respond to a new message in a chat during a specified period.",
+                "operationId": "ReportsChatsResponseTimeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/availability": {
+            "get": {
+                "summary": "Availability",
+                "description": "Shows how long an agent (or a group or the whole account) was available for chatting during a specified period. When querying for one day, the results are shown in minutes per every hour, otherwise in hours for each day.",
+                "operationId": "ReportsAvailabilityGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/chats\/ABC123\/tags": {
+            "put": {
+                "summary": "Update chat tags",
+                "description": "This method updates the tags assigned to a chat.\n\n",
+                "operationId": "ChatsABC123TagsPut",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "tag[0]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "tag[1]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/visitors": {
+            "get": {
+                "summary": "List all visitors",
+                "description": "Returns a list of the visitors on the pages with the tracking code installed.\n\n",
+                "operationId": "VisitorsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group[]",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/tickets\/resolution_time": {
+            "get": {
+                "summary": "Tickets resolution time",
+                "description": "Shows the resolution time of the tickets that were solved during the specified period.\n\n",
+                "operationId": "ReportsTicketsResolutionTimeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/tags\/support": {
+            "delete": {
+                "summary": "Delete a tag",
+                "description": "Deletes a tag from the chosen group. The agents will no longer be able to tag chats and tickets using this tag.\n\nDeleting a tag will not remove it from the archived chats and tickets.\n",
+                "operationId": "TagsSupportDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "group",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/goals": {
+            "get": {
+                "summary": "Goals",
+                "description": "Shows the number of reached goals.\n\n",
+                "operationId": "ReportsChatsGoalsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "goal",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/queued_visitors": {
+            "get": {
+                "summary": "Queued visitors",
+                "description": "Shows how many visitors waited in the queue and how many abandoned the queue or proceeded to chats",
+                "operationId": "ReportsChatsQueuedVisitorsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/queued_visitors\/waiting_times": {
+            "get": {
+                "summary": "Queue waiting times",
+                "description": "Shows the Minimum, Average and Maximum waiting time.",
+                "operationId": "ReportsChatsQueuedVisitorsWaitingTimesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/chatting_time": {
+            "get": {
+                "summary": "Chatting time",
+                "description": "Shows how much time an agent (or a group) spent on chatting during a specified period. When querying for one day, the results are shown in minutes per every hour, otherwise in hours for each day.",
+                "operationId": "ReportsChatsChattingTimeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/goals\/ABC123\/mark_as_successful": {
+            "post": {
+                "summary": "Mark a goal as successful",
+                "description": "The GOAL_ID is obtained from the goals list.",
+                "operationId": "GoalsABC123MarkAsSuccessfulPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "visitor_id",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/status": {
+            "get": {
+                "summary": "Get status",
+                "description": "Returns the current LiveChat status. Available return values: online, offline.\n\n",
+                "operationId": "StatusGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/greetings\/2491": {
+            "put": {
+                "summary": "Update greeting",
+                "description": "Use this request to change the name or message of a greeting.",
+                "operationId": "Greetings2491Put",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "properties[greeting",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/tickets\/first_response_time": {
+            "get": {
+                "summary": "Tickets first response time",
+                "description": "Shows the time of the first response to the tickets that were responded to for the first time during the specified period.",
+                "operationId": "ReportsTicketsFirstResponseTimeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "agent",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/chats\/ABC123\/send_transcript": {
+            "post": {
+                "summary": "Send chat transcript to e-mail",
+                "description": "",
+                "operationId": "ChatsABC123SendTranscriptPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/chats\/agents_occupancy": {
+            "get": {
+                "summary": "Number of simultaneous chats",
+                "description": "This request shows the maximum number of concurrent chats that happened at the same hour on a particular day.",
+                "operationId": "ReportsChatsAgentsOccupancyGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "weekday",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/visitors\/S1352647457.ac951bfe2e\/details": {
+            "post": {
+                "summary": "Add custom visitor details",
+                "description": "Displays additional information about a visitor in LiveChat apps.",
+                "operationId": "VisitorsS1352647457Ac951bfe2eDetailsPost",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "license_id",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "token",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "id",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "fields[0][name]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "fields[0][value]",
+                        "in": "formData",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/tickets\/5FUED": {
+            "get": {
+                "summary": "Get single ticket",
+                "description": "Returns a single ticket item for the given TICKET_ID",
+                "operationId": "Tickets5FUEDGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/reports\/tickets\/new_tickets": {
+            "get": {
+                "summary": "New tickets",
+                "description": "Shows the number of the tickets created during the specified period.\n\n",
+                "operationId": "ReportsTicketsNewTicketsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "X",
+                        "in": "header",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "CreateATicketresponse": {
+                "type": "object",
+                "properties": {
+                    "events": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "groups": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subject": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "modified": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "opened": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "firstResponse": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "tags": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "rate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "date": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Event": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "is_private": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Author": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Source": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Requester": {
+                "type": "object",
+                "properties": {
+                    "mail": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ip": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Group": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Source6": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Opened": {
+                "type": "object",
+                "properties": {
+                    "from": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "CurrentGroup": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
