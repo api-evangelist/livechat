@@ -1,0 +1,60 @@
+{
+    "name": "LiveChat",
+    "description": "LiveChat is an offline customer service software with live support, help desk software, and web analytics capabilities.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28877-developers-livechatinc-com.jpg",
+    "tags": [
+        "chats",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/livechat\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "LiveChat REST API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28877-developers-livechatinc-com.jpg",
+            "humanURL": "https:\/\/www.livechatinc.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/livechat-rest-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/livechat-rest-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/livechat-rest-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "https:\/\/www.livechatinc.com\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/livechatsoftware"
+        },
+        {
+            "type": "Email",
+            "url": "support@livechatinc.com"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/LiveChat"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/developers.livechatinc.com"
+        }
+    ]
+}
