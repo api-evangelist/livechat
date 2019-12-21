@@ -1,5 +1,5 @@
 {
-    "id": "cce2d5aa983a7faa15aecceb7d250b46",
+    "id": "73541b8caf2eaff0fee5f7a8b6b13d33",
     "name": "LiveChat REST API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "1b5a315dbb22c66a9e441c5a8e7c0a45",
+            "id": "88deea005768c103381391541fa9bafb",
             "name": "Delete a webhook",
             "url": "httpsapi.livechatinc.com\/\/webhooks\/12345",
             "description": "Deletes a webhook with the given ID.\n\n",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "f6881fa8ea05e1afe513d4819c1e13f2",
+            "id": "c388211756a1c69842fabe39b5009208",
             "name": "Chat ratings report",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/ratings",
             "description": "Shows how many chats have been rated and how they have been rated during a specified period.\n\n",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "08e0c6544d05235080b4084416d61b4d",
+            "id": "c8eafe94d9239f5cb00033452a07f2c0",
             "name": "List all canned responses1",
             "url": "httpsapi.livechatinc.com\/\/canned_responses\/ABC123",
             "description": "Returns the list of all currently set canned responses.",
@@ -127,11 +127,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "2d6c0bb0e23242c16304cc3ffa6e29e5",
+            "id": "c3f7cb93b48105a95db5212e6f7b4f13",
             "name": "Update a canned response",
             "url": "httpsapi.livechatinc.com\/\/canned_responses\/ABC123",
             "description": "Updates the specified canned response by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\n",
@@ -165,11 +165,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "610d0508fd025b7bd7d8f5eae9141df9",
+            "id": "063894a242214441fe5e615405f01354",
             "name": "Remove a canned response",
             "url": "httpsapi.livechatinc.com\/\/canned_responses\/ABC123",
             "description": "Removes a canned response with the given CANNED_RESPONSE_ID.",
@@ -196,11 +196,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "41bea0dd620790a8959db513f28ddab6",
+            "id": "8544737cbd4aa4ba702dbb3bc9931f7b",
             "name": "Update a group",
             "url": "httpsapi.livechatinc.com\/\/groups\/ABC123",
             "description": "Updates the specified group by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\n",
@@ -248,11 +248,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "bc59ba6a147023d9131ad0c2368775d6",
+            "id": "4328402a445030f9bf2a7769b26da27d",
             "name": "Remove a group",
             "url": "httpsapi.livechatinc.com\/\/groups\/ABC123",
             "description": "Removes a group with the given GROUP_ID.",
@@ -279,11 +279,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "7a536d8e776aabebbc354ce1e3624251",
+            "id": "9979c6bab1d258ea927448b8a4c66049",
             "name": "Chat engagement",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/engagement",
             "description": "This report shows you where you get your chats from. They can come from i.e. automatic invitations, manual invitations or the visitors can start the chats by themselves.",
@@ -338,11 +338,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "489aab20592a9287df75a659e9984058",
+            "id": "fed6a8e092553f856378ee0db5032f68",
             "name": "List all greetings",
             "url": "httpsapi.livechatinc.com\/\/greetings",
             "description": "Returns the list of all greetings.",
@@ -376,11 +376,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "95a2a5bc26743f7b68016f82c2981472",
+            "id": "f0c86dc64bd08291a5cd0ffcacb7fdff",
             "name": "Create a new greeting",
             "url": "httpsapi.livechatinc.com\/\/greetings",
             "description": "Use this function to create a new greeting.",
@@ -456,11 +456,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "aa88175dbec4e1f4a436b62f58c21469",
+            "id": "618e048cc1c82adfc09604762b48de65",
             "name": "Display configured webhooks",
             "url": "httpsapi.livechatinc.com\/\/webhooks",
             "description": "Returns a list of webhooks that have been created in a LiveChat account.\n\n",
@@ -487,11 +487,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "3e55844b0abd382d30cdc71fd963feba",
+            "id": "5918e910a4a3222b5d56975660682e6a",
             "name": "Create a new webhook",
             "url": "httpsapi.livechatinc.com\/\/webhooks",
             "description": "Creates a new webhook.\n\n",
@@ -539,11 +539,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "b7bdc9788dd0c437383ab6a57385f340",
+            "id": "d887ceea2614015e70c10fe169d4f392",
             "name": "Greetings",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/greetings",
             "description": "Returns the \u201cgreetings to chats to goals\u201d conversion rates report.\n\ndisplayed is the number of displayed greetings. accepted tells you how many chats resulted from these greetings. goals tells you how many goals resulted from these greetings.\n\n",
@@ -591,11 +591,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "a836535b15a0937479033f86efda88b0",
+            "id": "a61f018bf2c0ebbb382fc7ab0d07c7ea",
             "name": "List all tags",
             "url": "httpsapi.livechatinc.com\/\/tags",
             "description": "Returns tags from all groups.\n\n",
@@ -629,11 +629,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "c9b0b1f71880012344d35373d5487fca",
+            "id": "263d99a8bbf641b5078ea361b8cb2565",
             "name": "Add a tag",
             "url": "httpsapi.livechatinc.com\/\/tags",
             "description": "Adds a new tag. Note that only the owner and the admins are authorized to use this.\n\n",
@@ -681,11 +681,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "b32fc924e7b3b33367d761d390232889",
+            "id": "79d9cc63079308c128a611d52e30efbb",
             "name": "Get a single agent details",
             "url": "httpsapi.livechatinc.com\/\/agents\/john@public.com",
             "description": "Returns complete details of the agent for the given LOGIN.",
@@ -712,11 +712,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "8597e7348711245292d76df6a0c034c6",
+            "id": "d34261dce4e4ac81c89bc3b5b8548060",
             "name": "Get a single agent details",
             "url": "httpsapi.livechatinc.com\/\/agents\/john@public.com",
             "description": "Returns complete details of the agent for the given LOGIN.",
@@ -750,11 +750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "1d51a920f414c8db17c3ad1d900ae048",
+            "id": "b2cb84a4d9b86134ed8142463ff9c596",
             "name": "Remove an agent",
             "url": "httpsapi.livechatinc.com\/\/agents\/john@public.com",
             "description": "Removes an agent.",
@@ -781,11 +781,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "75cd32bff94a3039b50df4c3e1ec60b3",
+            "id": "49ad1c7e5dad08d05a0e24e70225d431",
             "name": "Get list of tickets",
             "url": "httpsapi.livechatinc.com\/\/tickets",
             "description": "Returns all tickets.\n\n",
@@ -826,11 +826,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "c9ca273503d2282f37181c3cb5c21d84",
+            "id": "14e9d162ba6e151cc46f084d8ad85513",
             "name": "Create a ticket",
             "url": "httpsapi.livechatinc.com\/\/tickets",
             "description": "Creates a new ticket.\n\n",
@@ -885,11 +885,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "94747ea171d049a68a8c8d977c6f7409",
+            "id": "84a078499922161e3e061fd6a734f9bb",
             "name": "Solved tickets",
             "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/solved_tickets",
             "description": "Shows the number of the tickets solved during the specified period.\n\n",
@@ -930,11 +930,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "8bb9bb272b8583430125a246bdf14c9c",
+            "id": "8749cebc14dadd1bfd1aaf3c668c38f7",
             "name": "Chats first response time",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/first_response_time",
             "description": "The average amount of time it takes the agents to respond to a new chat over a specified period of time.",
@@ -961,11 +961,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "a848ecbad8691cf25cc7b4222d64c090",
+            "id": "eee00ec0ee0f6aa1528df0cd0335ee4e",
             "name": "List all canned responses",
             "url": "httpsapi.livechatinc.com\/\/canned_responses",
             "description": "Returns the list of all currently set canned responses.",
@@ -992,11 +992,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "6cccc768f849b233721f712766249960",
+            "id": "298adda49a115214e35f343f15fb37a6",
             "name": "Create a new canned response",
             "url": "httpsapi.livechatinc.com\/\/canned_responses",
             "description": "Creates a new canned response.\n\n",
@@ -1044,11 +1044,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "548ef7d130b96c9a949fd3f244226256",
+            "id": "1a74a203afa66428e63a32c76a3efcf6",
             "name": "Chat Ranking",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/ratings\/ranking",
             "description": "Shows the ratio of good to bad ratings for each operator.",
@@ -1075,11 +1075,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "57120f68aec40d479384f780c37c6ab2",
+            "id": "81e2921822b85efce7326fd46823f7d3",
             "name": "List all groups",
             "url": "httpsapi.livechatinc.com\/\/groups",
             "description": "Returns all created groups.\n\n",
@@ -1106,11 +1106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "5acde47e8b157fb56b1c07049bf4e286",
+            "id": "906bce1b733e1ab81c9e47b14fa608f8",
             "name": "Create a new group",
             "url": "httpsapi.livechatinc.com\/\/groups",
             "description": "Creates a new group in your license.\n\n",
@@ -1158,11 +1158,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "d8f8b8fcbd4278cf85b51fa92d748109",
+            "id": "96152ac53e31e115be7fd9d5f0c60204",
             "name": "Get single chat",
             "url": "httpsapi.livechatinc.com\/\/chats\/ABC123",
             "description": "Returns a single chat item for the given CHAT_ID.",
@@ -1189,11 +1189,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "e121b9b2fa369d5ddd4ba9985610ec0e",
+            "id": "0bf5d19587c9e77f07c63472d9618ae0",
             "name": "Ticket sources",
             "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/ticket_sources",
             "description": "Shows the distribution of the tickets between various channels.",
@@ -1234,11 +1234,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "e0054bb465aecffea9a978f80ee68724",
+            "id": "282cd2c9351d0b5a7ff440c9a16a8d44",
             "name": "Get a single greeting",
             "url": "httpsapi.livechatinc.com\/\/greetings\/ABC123",
             "description": "Returns the specified greeting.\n\n",
@@ -1265,11 +1265,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "c2726b2227a8f5dfe30c1bea57f40c6f",
+            "id": "b8493bb64b90641bd928471447630115",
             "name": "Remove a greeting",
             "url": "httpsapi.livechatinc.com\/\/greetings\/ABC123",
             "description": "Removes a greeting.",
@@ -1296,11 +1296,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "f7d12d01e7d1bb7196a90675715c300c",
+            "id": "3690fadba716c32391d181cc38cb8c03",
             "name": "Get a single group details",
             "url": "httpsapi.livechatinc.com\/\/groups\/{group_id}",
             "description": "Returns group details for the given GROUP_ID.\n",
@@ -1334,11 +1334,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "6b2e68a8afcb051abbd991a7321a62a8",
+            "id": "e1bfd809ee621e06ef931aa77c19be03",
             "name": "Total chats",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/total_chats",
             "description": "Shows how many chats occurred during the specified period.\n\n",
@@ -1393,11 +1393,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "1daf4567f009a6474efc61c99f778343",
+            "id": "bd6659af5881efdc572e24e808ab7b62",
             "name": "List all goals",
             "url": "httpsapi.livechatinc.com\/\/goals",
             "description": "Returns all currently set goals. The active parameter indicates whether a goal is enabled or not.",
@@ -1424,11 +1424,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "3694cee86e6d1640e9a7beb84e72a216",
+            "id": "2183cc6e2e2ce21ecb83b11ac1824199",
             "name": "Add a new goal",
             "url": "httpsapi.livechatinc.com\/\/goals",
             "description": "Creates a new goal.\n\n",
@@ -1483,11 +1483,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "17fff5e619eaa596f2031acbb0c444dd",
+            "id": "e51b3e414c3e5a56487bcaa4aa8f2e97",
             "name": "Get list of chats",
             "url": "httpsapi.livechatinc.com\/\/chats",
             "description": "Returns all ended chats.",
@@ -1514,11 +1514,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "de79d964120ea8741c7389e9c36093a3",
+            "id": "36db7ad36f21afcb7ea31d823cea57f3",
             "name": "List all agents",
             "url": "httpsapi.livechatinc.com\/\/agents",
             "description": "Returns all LiveChat agents list",
@@ -1545,11 +1545,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "37bf2b632a323916fc935314dd2567ca",
+            "id": "753d0eb8adab19411ad77763854df5e7",
             "name": "Create a new agent",
             "url": "httpsapi.livechatinc.com\/\/agents",
             "description": "Creates a new agent in your license.\n\n",
@@ -1590,11 +1590,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "8e0801e6bff93593cc3ba83831a5d0fc",
+            "id": "6df917b35eb509f23b093e0d82b92c55",
             "name": "Get a single goal details",
             "url": "httpsapi.livechatinc.com\/\/goals\/ABC123",
             "description": "Returns the goal details for the given GOAL_ID.",
@@ -1621,11 +1621,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "2ecd3a9f778051b53f70b4bdfda876ec",
+            "id": "dede0e334637810b8957cda806bda9c0",
             "name": "Update a goal",
             "url": "httpsapi.livechatinc.com\/\/goals\/ABC123",
             "description": "Updates the specified goal by setting the values of the parameters passed. Any parameters not provided will be left unchanged.\n\nThe GOAL_ID is obtained from the goals list.",
@@ -1666,11 +1666,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "39c2232f9586202a82feb63d4bd0018c",
+            "id": "edc985563996db0c6f3c9f941aece76f",
             "name": "Remove a goal",
             "url": "httpsapi.livechatinc.com\/\/goals\/ABC123",
             "description": "Removes a goal with the given GOAL_ID.\n\n",
@@ -1697,11 +1697,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "2141965c242c6bd7e5d4f5d73e4ab32b",
+            "id": "af06ab369685b89908d8cb979533a81d",
             "name": "Ticket ratings report",
             "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/ratings",
             "description": "Shows the tickets that were rated during the specified period.\n\n",
@@ -1756,11 +1756,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "a696448019b5455ae506de5f6898efd0",
+            "id": "490a0a69f7a00f0637e144257892373b",
             "name": "Update ticket tags",
             "url": "httpsapi.livechatinc.com\/\/tickets\/5FUED\/tags",
             "description": "Updates tags associated with the ticket.\n\n",
@@ -1794,11 +1794,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "4a1291ac23afdbd0c2c97869299b81ed",
+            "id": "c4229a85cb30a400ed55ccae438b442e",
             "name": "Ticket Ranking",
             "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/ratings\/ranking",
             "description": "Shows the ratio of good to bad ratings for each operator.\n\n",
@@ -1825,11 +1825,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "adf6c5ed8bb27cb413a04ef5c82f3f32",
+            "id": "ae227947ab19e7b0517478a8e1aeff91",
             "name": "Chats response time",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/response_time",
             "description": "The average amount of time it takes the agents to respond to a new message in a chat during a specified period.",
@@ -1856,11 +1856,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "2e221bca784870c3bbf68ec69ea369c0",
+            "id": "c91df325fd6077ea9ef47c32328413c7",
             "name": "Availability",
             "url": "httpsapi.livechatinc.com\/\/reports\/availability",
             "description": "Shows how long an agent (or a group or the whole account) was available for chatting during a specified period. When querying for one day, the results are shown in minutes per every hour, otherwise in hours for each day.",
@@ -1887,11 +1887,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "ed1dea7bb478b0c1daf1c85f4023f0b4",
+            "id": "efc981878a8c0641dd8eb349928cd064",
             "name": "Update chat tags",
             "url": "httpsapi.livechatinc.com\/\/chats\/ABC123\/tags",
             "description": "This method updates the tags assigned to a chat.\n\n",
@@ -1932,11 +1932,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "cab8a0b9cc7e14ad4b5dee2743297fd3",
+            "id": "b7dbef2079315c66add892fbe6f9d3c4",
             "name": "List all visitors",
             "url": "httpsapi.livechatinc.com\/\/visitors",
             "description": "Returns a list of the visitors on the pages with the tracking code installed.\n\n",
@@ -1977,11 +1977,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "cf03bc767304dac76583d407d0f0318f",
+            "id": "2c9b50fa6df01b4b821c9e89def23e07",
             "name": "Tickets resolution time",
             "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/resolution_time",
             "description": "Shows the resolution time of the tickets that were solved during the specified period.\n\n",
@@ -2022,11 +2022,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "9aeab382609c5d750a11fc057c5fbb95",
+            "id": "6d4a4cf828ffb1383b67087953672eb5",
             "name": "Delete a tag",
             "url": "httpsapi.livechatinc.com\/\/tags\/support",
             "description": "Deletes a tag from the chosen group. The agents will no longer be able to tag chats and tickets using this tag.\n\nDeleting a tag will not remove it from the archived chats and tickets.\n",
@@ -2060,11 +2060,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "f65586aaca885fedfa4d0e59255db0d4",
+            "id": "283205769166a202fa2019195617f3ff",
             "name": "Goals",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/goals",
             "description": "Shows the number of reached goals.\n\n",
@@ -2112,11 +2112,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "94e956fd49ec87ca07bb7e817c8b5007",
+            "id": "c91f00a407789cbbdd35a6fb1f21d44f",
             "name": "Queued visitors",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/queued_visitors",
             "description": "Shows how many visitors waited in the queue and how many abandoned the queue or proceeded to chats",
@@ -2157,11 +2157,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "7a1d37607fe080e7841422624acd3230",
+            "id": "eb0752ac184c4356f1c411d5d64c75e4",
             "name": "Queue waiting times",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/queued_visitors\/waiting_times",
             "description": "Shows the Minimum, Average and Maximum waiting time.",
@@ -2202,11 +2202,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "ca50b2a3b8ef957d9454b6f52147fa31",
+            "id": "f741e153bc7598c36210e2c9398bd6a3",
             "name": "Chatting time",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/chatting_time",
             "description": "Shows how much time an agent (or a group) spent on chatting during a specified period. When querying for one day, the results are shown in minutes per every hour, otherwise in hours for each day.",
@@ -2233,11 +2233,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "d1abb9a23dc57a606ed0c173556ad3b2",
+            "id": "36a6da9d6ee97981533a09846bd583cd",
             "name": "Mark a goal as successful",
             "url": "httpsapi.livechatinc.com\/\/goals\/ABC123\/mark_as_successful",
             "description": "The GOAL_ID is obtained from the goals list.",
@@ -2271,11 +2271,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "f6091019162973192bf57519fb46fd65",
+            "id": "2b56b38b13e17ae198fbefec7dedc71b",
             "name": "Get status",
             "url": "httpsapi.livechatinc.com\/\/status",
             "description": "Returns the current LiveChat status. Available return values: online, offline.\n\n",
@@ -2302,11 +2302,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "5aa12439c80e0436d902834a0224799c",
+            "id": "970b93ad53099929a814ed4d5def5dab",
             "name": "Update greeting",
             "url": "httpsapi.livechatinc.com\/\/greetings\/2491",
             "description": "Use this request to change the name or message of a greeting.",
@@ -2347,11 +2347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "ba123604ae3ac046d4371bc742b76a8c",
+            "id": "38e0a7d35fcdcdf708c3de1c04cdf2ad",
             "name": "Tickets first response time",
             "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/first_response_time",
             "description": "Shows the time of the first response to the tickets that were responded to for the first time during the specified period.",
@@ -2399,11 +2399,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "b409b606550bb1d1f2713d857187e63a",
+            "id": "e6621ce0ef4a6b0c018afccdbd5ee80c",
             "name": "Send chat transcript to e-mail",
             "url": "httpsapi.livechatinc.com\/\/chats\/ABC123\/send_transcript",
             "description": "",
@@ -2430,11 +2430,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "5e7a86f37ad877ca1014d491cd3ba77f",
+            "id": "761b6ac07b3d14711e6492789ea36179",
             "name": "Number of simultaneous chats",
             "url": "httpsapi.livechatinc.com\/\/reports\/chats\/agents_occupancy",
             "description": "This request shows the maximum number of concurrent chats that happened at the same hour on a particular day.",
@@ -2468,11 +2468,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "c8a377f76c7308f6f19683fffd265680",
+            "id": "82dfb189e1b2da7820beeff2860400bc",
             "name": "Add custom visitor details",
             "url": "httpsapi.livechatinc.com\/\/visitors\/S1352647457.ac951bfe2e\/details",
             "description": "Displays additional information about a visitor in LiveChat apps.",
@@ -2534,11 +2534,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "9369eb5d19ab3c8fb0479e1b9194b0c2",
+            "id": "46b901294a52c87e7663067b618fc54a",
             "name": "Get single ticket",
             "url": "httpsapi.livechatinc.com\/\/tickets\/5FUED",
             "description": "Returns a single ticket item for the given TICKET_ID",
@@ -2565,11 +2565,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         },
         {
-            "id": "e63203f087ccd889415eed315df61d5d",
+            "id": "7b42d700bf765e04c67592c533ff5a23",
             "name": "New tickets",
             "url": "httpsapi.livechatinc.com\/\/reports\/tickets\/new_tickets",
             "description": "Shows the number of the tickets created during the specified period.\n\n",
@@ -2617,7 +2617,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cce2d5aa983a7faa15aecceb7d250b46",
+            "collectionId": "73541b8caf2eaff0fee5f7a8b6b13d33",
             "rawModeData": ""
         }
     ]
