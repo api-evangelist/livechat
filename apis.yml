@@ -1,0 +1,100 @@
+aid: livechat
+name: LiveChat
+description: >-
+  LiveChat is a customer service and live chat platform used by businesses to
+  engage website visitors, run sales conversations, and route support tickets
+  across agent teams. The Text Platform (which powers LiveChat) exposes a suite
+  of REST APIs for chats, agents, customers, configuration, and reporting, with
+  both Web API and RTM (real-time messaging) interfaces. Authentication uses
+  OAuth 2.1 with Personal Access Tokens or full OAuth authorization code flow.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Live Chat
+  - Customer Service
+  - Customer Support
+  - Messaging
+  - Sales
+  - Help Desk
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: livechat:agent-chat-api
+    name: LiveChat Agent Chat API
+    description: >-
+      REST and RTM APIs for agents to manage chats, send messages, transfer
+      conversations, and update statuses. Authenticated with OAuth 2.1
+      bearer tokens or Personal Access Tokens.
+    humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+    baseURL: https://api.livechatinc.com/v3.5/agent
+    tags:
+      - Agents
+      - Chats
+      - Messaging
+    properties:
+      - type: Documentation
+        url: https://platform.text.com/docs/messaging/agent-chat-api
+  - aid: livechat:customer-chat-api
+    name: LiveChat Customer Chat API
+    description: >-
+      REST and RTM APIs for customers to start and participate in chats with
+      agents on LiveChat-powered websites. Uses customer access tokens.
+    humanURL: https://platform.text.com/docs/messaging/customer-chat-api
+    baseURL: https://api.livechatinc.com/v3.5/customer
+    tags:
+      - Customers
+      - Chats
+      - Messaging
+    properties:
+      - type: Documentation
+        url: https://platform.text.com/docs/messaging/customer-chat-api
+  - aid: livechat:configuration-api
+    name: LiveChat Configuration API
+    description: >-
+      Manage agents, groups, bots, tags, webhooks, properties, and other
+      account configuration for a LiveChat organization.
+    humanURL: https://platform.text.com/docs/management/configuration-api
+    baseURL: https://api.livechatinc.com/v3.5/configuration
+    tags:
+      - Configuration
+      - Agents
+      - Webhooks
+      - Bots
+    properties:
+      - type: Documentation
+        url: https://platform.text.com/docs/management/configuration-api
+  - aid: livechat:reports-api
+    name: LiveChat Reports API
+    description: >-
+      Retrieve reporting data for chats, agents, tags, and customer activity
+      across the LiveChat organization.
+    humanURL: https://platform.text.com/docs/data-reporting/reports-api
+    baseURL: https://api.livechatinc.com/v3.5/reports
+    tags:
+      - Reporting
+      - Analytics
+      - Metrics
+    properties:
+      - type: Documentation
+        url: https://platform.text.com/docs/data-reporting/reports-api
+
+common:
+  - type: Website
+    url: https://www.livechat.com
+  - type: Documentation
+    url: https://platform.text.com/docs
+  - type: Developer Console
+    url: https://developers.livechat.com/console
+  - type: GitHub Organization
+    url: https://github.com/livechat
+  - type: Sign Up
+    url: https://accounts.livechat.com/signup
+  - type: Pricing
+    url: https://www.livechat.com/pricing/
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
