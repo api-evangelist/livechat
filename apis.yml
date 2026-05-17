@@ -88,9 +88,9 @@ common:
     url: https://platform.text.com/docs
   - type: Developer Console
     url: https://developers.livechat.com/console
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/livechat
-  - type: Sign Up
+  - type: SignUp
     url: https://accounts.livechat.com/signup
   - type: Pricing
     url: https://www.livechat.com/pricing/
