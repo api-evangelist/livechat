@@ -82,6 +82,8 @@ apis:
         url: https://platform.text.com/docs/data-reporting/reports-api
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/livechatcom
   - type: Website
     url: https://www.livechat.com
   - type: Documentation
