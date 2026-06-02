@@ -19,7 +19,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/apis.yml
 created: '2026-05-11'
-modified: '2026-05-11'
+modified: '2026-05-30'
 specificationVersion: '0.19'
 apis:
   - aid: livechat:agent-chat-api
@@ -66,6 +66,28 @@ apis:
     properties:
       - type: Documentation
         url: https://platform.text.com/docs/management/configuration-api
+  - aid: livechat:webhooks-and-rtm
+    name: LiveChat Webhooks and RTM API
+    description: >-
+      Asynchronous event surfaces for LiveChat. HTTP webhooks
+      registered through the Configuration API and the Agent Chat
+      Real-Time Messaging (RTM) WebSocket API share the same event
+      payloads (incoming_chat, incoming_event, chat_user_added,
+      chat_user_removed, customer_updated, agent_*, bot_*, group_*,
+      and more).
+    humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+    baseURL: wss://api.livechatinc.com/v3.5/agent/rtm/ws
+    tags:
+      - Webhooks
+      - Real-Time Messaging
+      - WebSocket
+      - Events
+    properties:
+      - type: Documentation
+        url: https://platform.text.com/docs/messaging/agent-chat-api
+      - type: AsyncAPI
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/openapi/livechat-asyncapi.yml
   - aid: livechat:reports-api
     name: LiveChat Reports API
     description: >-

@@ -1,0 +1,825 @@
+asyncapi: "2.6.0"
+info:
+  title: LiveChat Webhooks and RTM API
+  version: "v3.5"
+  description: >-
+    AsyncAPI definition for LiveChat's asynchronous event surfaces:
+    HTTP webhooks (registered via the Configuration API) and the
+    Agent Chat Real-Time Messaging (RTM) WebSocket API. Webhooks and
+    RTM pushes share the same payload shapes; both deliver chat,
+    event, customer, and configuration events out of the LiveChat
+    Text Platform. Authentication uses OAuth 2.x access tokens or
+    Personal Access Tokens. Webhook event types are registered via
+    the Configuration API webhook management methods
+    (register_webhook, list_webhooks, unregister_webhook,
+    list_webhook_names, enable_license_webhook,
+    disable_license_webhook, get_license_webhooks_state).
+  contact:
+    name: LiveChat / Text Platform
+    url: https://platform.text.com/docs
+defaultContentType: application/json
+
+servers:
+  webhooks:
+    url: https://{webhook_url}
+    protocol: https
+    description: >-
+      Customer-owned HTTPS endpoint registered through the
+      Configuration API register_webhook method. LiveChat POSTs
+      JSON event payloads to this URL when registered actions
+      occur.
+    variables:
+      webhook_url:
+        description: Fully qualified host and path of the registered webhook receiver.
+        default: example.com/livechat/webhook
+  rtm:
+    url: api.livechatinc.com/v3.5/agent/rtm/ws
+    protocol: wss
+    description: >-
+      Agent Chat Real-Time Messaging WebSocket endpoint. Clients
+      must authorize within 30 seconds of connection and ping the
+      server every 15 seconds to keep the connection alive.
+
+channels:
+  chats/incoming_chat:
+    description: A new chat has been started.
+    subscribe:
+      operationId: onIncomingChat
+      message:
+        $ref: "#/components/messages/IncomingChat"
+  chats/chat_deactivated:
+    description: A chat has been deactivated (closed).
+    subscribe:
+      operationId: onChatDeactivated
+      message:
+        $ref: "#/components/messages/ChatDeactivated"
+  chats/chat_deleted:
+    description: A chat has been deleted.
+    subscribe:
+      operationId: onChatDeleted
+      message:
+        $ref: "#/components/messages/ChatDeleted"
+  chats/thread_deleted:
+    description: A specific thread within a chat has been deleted.
+    subscribe:
+      operationId: onThreadDeleted
+      message:
+        $ref: "#/components/messages/ThreadDeleted"
+  chats/threads_deleted:
+    description: Multiple threads have been deleted.
+    subscribe:
+      operationId: onThreadsDeleted
+      message:
+        $ref: "#/components/messages/ThreadsDeleted"
+
+  chat_access/chat_access_updated:
+    description: A chat's access (group assignment) has been updated.
+    subscribe:
+      operationId: onChatAccessUpdated
+      message:
+        $ref: "#/components/messages/ChatAccessUpdated"
+  chat_access/chat_transferred:
+    description: A chat has been transferred to another agent or group.
+    subscribe:
+      operationId: onChatTransferred
+      message:
+        $ref: "#/components/messages/ChatTransferred"
+
+  chat_users/user_added_to_chat:
+    description: A user (agent or customer) has been added to a chat.
+    subscribe:
+      operationId: onUserAddedToChat
+      message:
+        $ref: "#/components/messages/UserAddedToChat"
+  chat_users/user_removed_from_chat:
+    description: A user has been removed from a chat.
+    subscribe:
+      operationId: onUserRemovedFromChat
+      message:
+        $ref: "#/components/messages/UserRemovedFromChat"
+
+  events/incoming_event:
+    description: A new event (message, file, rich message, system message) has been sent in a chat.
+    subscribe:
+      operationId: onIncomingEvent
+      message:
+        $ref: "#/components/messages/IncomingEvent"
+  events/event_updated:
+    description: An event has been updated.
+    subscribe:
+      operationId: onEventUpdated
+      message:
+        $ref: "#/components/messages/EventUpdated"
+  events/event_deleted:
+    description: An event has been deleted from a chat.
+    subscribe:
+      operationId: onEventDeleted
+      message:
+        $ref: "#/components/messages/EventDeleted"
+  events/incoming_rich_message_postback:
+    description: A customer interacted with a rich message button (postback).
+    subscribe:
+      operationId: onIncomingRichMessagePostback
+      message:
+        $ref: "#/components/messages/IncomingRichMessagePostback"
+
+  properties/chat_properties_updated:
+    description: One or more chat properties have been updated.
+    subscribe:
+      operationId: onChatPropertiesUpdated
+      message:
+        $ref: "#/components/messages/ChatPropertiesUpdated"
+  properties/chat_properties_deleted:
+    description: One or more chat properties have been deleted.
+    subscribe:
+      operationId: onChatPropertiesDeleted
+      message:
+        $ref: "#/components/messages/ChatPropertiesDeleted"
+  properties/thread_properties_updated:
+    description: One or more thread properties have been updated.
+    subscribe:
+      operationId: onThreadPropertiesUpdated
+      message:
+        $ref: "#/components/messages/ThreadPropertiesUpdated"
+  properties/thread_properties_deleted:
+    description: One or more thread properties have been deleted.
+    subscribe:
+      operationId: onThreadPropertiesDeleted
+      message:
+        $ref: "#/components/messages/ThreadPropertiesDeleted"
+  properties/event_properties_updated:
+    description: One or more event properties have been updated.
+    subscribe:
+      operationId: onEventPropertiesUpdated
+      message:
+        $ref: "#/components/messages/EventPropertiesUpdated"
+  properties/event_properties_deleted:
+    description: One or more event properties have been deleted.
+    subscribe:
+      operationId: onEventPropertiesDeleted
+      message:
+        $ref: "#/components/messages/EventPropertiesDeleted"
+
+  thread_tags/thread_tagged:
+    description: A tag has been added to a thread.
+    subscribe:
+      operationId: onThreadTagged
+      message:
+        $ref: "#/components/messages/ThreadTagged"
+  thread_tags/thread_untagged:
+    description: A tag has been removed from a thread.
+    subscribe:
+      operationId: onThreadUntagged
+      message:
+        $ref: "#/components/messages/ThreadUntagged"
+
+  customers/incoming_customer:
+    description: A new customer has connected.
+    subscribe:
+      operationId: onIncomingCustomer
+      message:
+        $ref: "#/components/messages/IncomingCustomer"
+  customers/incoming_customers:
+    description: A batch of customers has connected.
+    subscribe:
+      operationId: onIncomingCustomers
+      message:
+        $ref: "#/components/messages/IncomingCustomers"
+  customers/customer_updated:
+    description: A customer's fields have been updated.
+    subscribe:
+      operationId: onCustomerUpdated
+      message:
+        $ref: "#/components/messages/CustomerUpdated"
+  customers/customer_page_updated:
+    description: A customer navigated to a different page.
+    subscribe:
+      operationId: onCustomerPageUpdated
+      message:
+        $ref: "#/components/messages/CustomerPageUpdated"
+  customers/customer_statistics_updated:
+    description: A customer's statistics (visits, threads) have been updated.
+    subscribe:
+      operationId: onCustomerStatisticsUpdated
+      message:
+        $ref: "#/components/messages/CustomerStatisticsUpdated"
+  customers/customer_banned:
+    description: A customer has been banned.
+    subscribe:
+      operationId: onCustomerBanned
+      message:
+        $ref: "#/components/messages/CustomerBanned"
+  customers/customer_transferred:
+    description: A customer has been transferred between agents.
+    subscribe:
+      operationId: onCustomerTransferred
+      message:
+        $ref: "#/components/messages/CustomerTransferred"
+  customers/customer_left:
+    description: A customer has left.
+    subscribe:
+      operationId: onCustomerLeft
+      message:
+        $ref: "#/components/messages/CustomerLeft"
+  customers/subscribed_customers_totals_updated:
+    description: Totals of subscribed customers have been updated.
+    subscribe:
+      operationId: onSubscribedCustomersTotalsUpdated
+      message:
+        $ref: "#/components/messages/SubscribedCustomersTotalsUpdated"
+  customers/ticket_created:
+    description: A ticket has been created.
+    subscribe:
+      operationId: onTicketCreated
+      message:
+        $ref: "#/components/messages/TicketCreated"
+  customers/ticket_deleted:
+    description: A ticket has been deleted.
+    subscribe:
+      operationId: onTicketDeleted
+      message:
+        $ref: "#/components/messages/TicketDeleted"
+
+  status/routing_status_set:
+    description: An agent's routing status has been changed.
+    subscribe:
+      operationId: onRoutingStatusSet
+      message:
+        $ref: "#/components/messages/RoutingStatusSet"
+  status/agent_disconnected:
+    description: An agent has been disconnected from the RTM session.
+    subscribe:
+      operationId: onAgentDisconnected
+      message:
+        $ref: "#/components/messages/AgentDisconnected"
+
+  configuration/agent_created:
+    description: A new agent has been created in the license.
+    subscribe:
+      operationId: onAgentCreated
+      message:
+        $ref: "#/components/messages/AgentCreated"
+  configuration/agent_approved:
+    description: A pending agent has been approved.
+    subscribe:
+      operationId: onAgentApproved
+      message:
+        $ref: "#/components/messages/AgentApproved"
+  configuration/agent_updated:
+    description: An agent's configuration has been updated.
+    subscribe:
+      operationId: onAgentUpdated
+      message:
+        $ref: "#/components/messages/AgentUpdated"
+  configuration/agent_suspended:
+    description: An agent has been suspended.
+    subscribe:
+      operationId: onAgentSuspended
+      message:
+        $ref: "#/components/messages/AgentSuspended"
+  configuration/agent_unsuspended:
+    description: An agent has been unsuspended.
+    subscribe:
+      operationId: onAgentUnsuspended
+      message:
+        $ref: "#/components/messages/AgentUnsuspended"
+  configuration/agent_deleted:
+    description: An agent has been deleted from the license.
+    subscribe:
+      operationId: onAgentDeleted
+      message:
+        $ref: "#/components/messages/AgentDeleted"
+  configuration/auto_accesses_updated:
+    description: Auto access rules have been updated.
+    subscribe:
+      operationId: onAutoAccessesUpdated
+      message:
+        $ref: "#/components/messages/AutoAccessesUpdated"
+  configuration/bot_created:
+    description: A bot agent has been created.
+    subscribe:
+      operationId: onBotCreated
+      message:
+        $ref: "#/components/messages/BotCreated"
+  configuration/bot_updated:
+    description: A bot agent has been updated.
+    subscribe:
+      operationId: onBotUpdated
+      message:
+        $ref: "#/components/messages/BotUpdated"
+  configuration/bot_deleted:
+    description: A bot agent has been deleted.
+    subscribe:
+      operationId: onBotDeleted
+      message:
+        $ref: "#/components/messages/BotDeleted"
+  configuration/group_created:
+    description: An agent group has been created.
+    subscribe:
+      operationId: onGroupCreated
+      message:
+        $ref: "#/components/messages/GroupCreated"
+  configuration/group_updated:
+    description: An agent group has been updated.
+    subscribe:
+      operationId: onGroupUpdated
+      message:
+        $ref: "#/components/messages/GroupUpdated"
+  configuration/group_deleted:
+    description: An agent group has been deleted.
+    subscribe:
+      operationId: onGroupDeleted
+      message:
+        $ref: "#/components/messages/GroupDeleted"
+
+  tags_groups/tag_created:
+    description: A tag has been created.
+    subscribe:
+      operationId: onTagCreated
+      message:
+        $ref: "#/components/messages/TagCreated"
+  tags_groups/tag_updated:
+    description: A tag has been updated.
+    subscribe:
+      operationId: onTagUpdated
+      message:
+        $ref: "#/components/messages/TagUpdated"
+  tags_groups/tag_deleted:
+    description: A tag has been deleted.
+    subscribe:
+      operationId: onTagDeleted
+      message:
+        $ref: "#/components/messages/TagDeleted"
+  tags_groups/groups_status_updated:
+    description: Groups statuses have been updated.
+    subscribe:
+      operationId: onGroupsStatusUpdated
+      message:
+        $ref: "#/components/messages/GroupsStatusUpdated"
+  tags_groups/license_properties_updated:
+    description: License-level properties have been updated.
+    subscribe:
+      operationId: onLicensePropertiesUpdated
+      message:
+        $ref: "#/components/messages/LicensePropertiesUpdated"
+  tags_groups/group_properties_updated:
+    description: Group-level properties have been updated.
+    subscribe:
+      operationId: onGroupPropertiesUpdated
+      message:
+        $ref: "#/components/messages/GroupPropertiesUpdated"
+
+  other/events_marked_as_seen:
+    description: Events have been marked as seen up to a specific time.
+    subscribe:
+      operationId: onEventsMarkedAsSeen
+      message:
+        $ref: "#/components/messages/EventsMarkedAsSeen"
+  other/incoming_sneak_peek:
+    description: A customer is composing a sneak peek (preview of typed text).
+    subscribe:
+      operationId: onIncomingSneakPeek
+      message:
+        $ref: "#/components/messages/IncomingSneakPeek"
+  other/incoming_typing_indicator:
+    description: A typing indicator has been received.
+    subscribe:
+      operationId: onIncomingTypingIndicator
+      message:
+        $ref: "#/components/messages/IncomingTypingIndicator"
+  other/incoming_thinking_indicator:
+    description: An AI thinking indicator has been received.
+    subscribe:
+      operationId: onIncomingThinkingIndicator
+      message:
+        $ref: "#/components/messages/IncomingThinkingIndicator"
+  other/incoming_multicast:
+    description: A non-chat multicast message has been received.
+    subscribe:
+      operationId: onIncomingMulticast
+      message:
+        $ref: "#/components/messages/IncomingMulticast"
+  other/chat_unfollowed:
+    description: A chat is no longer being followed by the agent.
+    subscribe:
+      operationId: onChatUnfollowed
+      message:
+        $ref: "#/components/messages/ChatUnfollowed"
+  other/queue_positions_updated:
+    description: Queue positions have been updated.
+    subscribe:
+      operationId: onQueuePositionsUpdated
+      message:
+        $ref: "#/components/messages/QueuePositionsUpdated"
+  other/thread_summary_set:
+    description: An AI-generated thread summary has been produced.
+    subscribe:
+      operationId: onThreadSummarySet
+      message:
+        $ref: "#/components/messages/ThreadSummarySet"
+  other/incoming_error:
+    description: An error message has been pushed.
+    subscribe:
+      operationId: onIncomingError
+      message:
+        $ref: "#/components/messages/IncomingError"
+
+components:
+  messages:
+    IncomingChat:
+      name: incoming_chat
+      title: incoming_chat
+      summary: A new chat has been started.
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ChatDeactivated:
+      name: chat_deactivated
+      title: chat_deactivated
+      summary: A chat has been deactivated.
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ChatDeleted:
+      name: chat_deleted
+      title: chat_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ThreadDeleted:
+      name: thread_deleted
+      title: thread_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ThreadsDeleted:
+      name: threads_deleted
+      title: threads_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ChatAccessUpdated:
+      name: chat_access_updated
+      title: chat_access_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ChatTransferred:
+      name: chat_transferred
+      title: chat_transferred
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    UserAddedToChat:
+      name: user_added_to_chat
+      title: user_added_to_chat
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    UserRemovedFromChat:
+      name: user_removed_from_chat
+      title: user_removed_from_chat
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingEvent:
+      name: incoming_event
+      title: incoming_event
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    EventUpdated:
+      name: event_updated
+      title: event_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    EventDeleted:
+      name: event_deleted
+      title: event_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingRichMessagePostback:
+      name: incoming_rich_message_postback
+      title: incoming_rich_message_postback
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ChatPropertiesUpdated:
+      name: chat_properties_updated
+      title: chat_properties_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ChatPropertiesDeleted:
+      name: chat_properties_deleted
+      title: chat_properties_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ThreadPropertiesUpdated:
+      name: thread_properties_updated
+      title: thread_properties_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ThreadPropertiesDeleted:
+      name: thread_properties_deleted
+      title: thread_properties_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    EventPropertiesUpdated:
+      name: event_properties_updated
+      title: event_properties_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    EventPropertiesDeleted:
+      name: event_properties_deleted
+      title: event_properties_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ThreadTagged:
+      name: thread_tagged
+      title: thread_tagged
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ThreadUntagged:
+      name: thread_untagged
+      title: thread_untagged
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingCustomer:
+      name: incoming_customer
+      title: incoming_customer
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingCustomers:
+      name: incoming_customers
+      title: incoming_customers
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    CustomerUpdated:
+      name: customer_updated
+      title: customer_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    CustomerPageUpdated:
+      name: customer_page_updated
+      title: customer_page_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    CustomerStatisticsUpdated:
+      name: customer_statistics_updated
+      title: customer_statistics_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    CustomerBanned:
+      name: customer_banned
+      title: customer_banned
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    CustomerTransferred:
+      name: customer_transferred
+      title: customer_transferred
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    CustomerLeft:
+      name: customer_left
+      title: customer_left
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    SubscribedCustomersTotalsUpdated:
+      name: subscribed_customers_totals_updated
+      title: subscribed_customers_totals_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    TicketCreated:
+      name: ticket_created
+      title: ticket_created
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    TicketDeleted:
+      name: ticket_deleted
+      title: ticket_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    RoutingStatusSet:
+      name: routing_status_set
+      title: routing_status_set
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AgentDisconnected:
+      name: agent_disconnected
+      title: agent_disconnected
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AgentCreated:
+      name: agent_created
+      title: agent_created
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AgentApproved:
+      name: agent_approved
+      title: agent_approved
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AgentUpdated:
+      name: agent_updated
+      title: agent_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AgentSuspended:
+      name: agent_suspended
+      title: agent_suspended
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AgentUnsuspended:
+      name: agent_unsuspended
+      title: agent_unsuspended
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AgentDeleted:
+      name: agent_deleted
+      title: agent_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    AutoAccessesUpdated:
+      name: auto_accesses_updated
+      title: auto_accesses_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    BotCreated:
+      name: bot_created
+      title: bot_created
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    BotUpdated:
+      name: bot_updated
+      title: bot_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    BotDeleted:
+      name: bot_deleted
+      title: bot_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    GroupCreated:
+      name: group_created
+      title: group_created
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    GroupUpdated:
+      name: group_updated
+      title: group_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    GroupDeleted:
+      name: group_deleted
+      title: group_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    TagCreated:
+      name: tag_created
+      title: tag_created
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    TagUpdated:
+      name: tag_updated
+      title: tag_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    TagDeleted:
+      name: tag_deleted
+      title: tag_deleted
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    GroupsStatusUpdated:
+      name: groups_status_updated
+      title: groups_status_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    LicensePropertiesUpdated:
+      name: license_properties_updated
+      title: license_properties_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    GroupPropertiesUpdated:
+      name: group_properties_updated
+      title: group_properties_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    EventsMarkedAsSeen:
+      name: events_marked_as_seen
+      title: events_marked_as_seen
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingSneakPeek:
+      name: incoming_sneak_peek
+      title: incoming_sneak_peek
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingTypingIndicator:
+      name: incoming_typing_indicator
+      title: incoming_typing_indicator
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingThinkingIndicator:
+      name: incoming_thinking_indicator
+      title: incoming_thinking_indicator
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingMulticast:
+      name: incoming_multicast
+      title: incoming_multicast
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ChatUnfollowed:
+      name: chat_unfollowed
+      title: chat_unfollowed
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    QueuePositionsUpdated:
+      name: queue_positions_updated
+      title: queue_positions_updated
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    ThreadSummarySet:
+      name: thread_summary_set
+      title: thread_summary_set
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+    IncomingError:
+      name: incoming_error
+      title: incoming_error
+      payload:
+        $ref: "#/components/schemas/EventEnvelope"
+
+  schemas:
+    EventEnvelope:
+      type: object
+      description: >-
+        Common envelope. Webhook deliveries wrap the event in an
+        outer object with action, license_id, organization_id and
+        payload. RTM pushes wrap the event with action, type=push
+        and payload. The action field equals the event name; the
+        payload schema is action-specific.
+      properties:
+        action:
+          type: string
+          description: Action / event name (e.g. incoming_chat).
+        type:
+          type: string
+          description: Message type (for RTM pushes this is "push").
+          enum:
+            - push
+        license_id:
+          type: integer
+          description: Numeric LiveChat license identifier (webhook deliveries).
+        organization_id:
+          type: string
+          format: uuid
+          description: Organization identifier (webhook deliveries).
+        additional_data:
+          type: array
+          description: Optional additional context configured at webhook registration.
+          items:
+            type: string
+        payload:
+          type: object
+          description: Action-specific payload; shape varies by action.
+          additionalProperties: true
+      required:
+        - action
+        - payload
+
+    RTMRequest:
+      type: object
+      description: Request message sent by an RTM client.
+      properties:
+        version:
+          type: string
+          description: API version (optional).
+        request_id:
+          type: string
+          description: Client-provided request identifier (optional).
+        action:
+          type: string
+          description: Action name.
+        payload:
+          type: object
+          additionalProperties: true
+      required:
+        - action
+
+    RTMResponse:
+      type: object
+      description: Response message returned by the RTM server to a client request.
+      properties:
+        request_id:
+          type: string
+        action:
+          type: string
+        type:
+          type: string
+          enum:
+            - response
+        success:
+          type: boolean
+        payload:
+          type: object
+          additionalProperties: true
+      required:
+        - action
+        - type
+        - success
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.x access token or Personal Access Token.
