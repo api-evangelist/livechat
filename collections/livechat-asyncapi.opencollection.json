@@ -1,0 +1,9 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Webhooks and RTM API",
+    "version": "v3.5"
+  },
+  "items": [],
+  "bundled": true
+}

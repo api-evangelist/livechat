@@ -1,0 +1,467 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Agent Chat API",
+    "version": "v3.6"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Chats",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List chats",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_chats"
+          },
+          "docs": "Retrieve chat summaries accessible to the agent."
+        },
+        {
+          "info": {
+            "name": "Get chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/get_chat"
+          },
+          "docs": "Fetch a single thread from a chat."
+        },
+        {
+          "info": {
+            "name": "List archives",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_archives"
+          },
+          "docs": "List archived chats with thread events."
+        },
+        {
+          "info": {
+            "name": "Start chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/start_chat"
+          },
+          "docs": "Start chat"
+        },
+        {
+          "info": {
+            "name": "Resume chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/resume_chat"
+          },
+          "docs": "Resume chat"
+        },
+        {
+          "info": {
+            "name": "Deactivate chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/deactivate_chat"
+          },
+          "docs": "Deactivate chat"
+        },
+        {
+          "info": {
+            "name": "Follow chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/follow_chat"
+          },
+          "docs": "Follow chat"
+        },
+        {
+          "info": {
+            "name": "Unfollow chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/unfollow_chat"
+          },
+          "docs": "Unfollow chat"
+        },
+        {
+          "info": {
+            "name": "Transfer chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/transfer_chat"
+          },
+          "docs": "Transfer chat"
+        },
+        {
+          "info": {
+            "name": "Add user to chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/add_user_to_chat"
+          },
+          "docs": "Add user to chat"
+        },
+        {
+          "info": {
+            "name": "Remove user from chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/remove_user_from_chat"
+          },
+          "docs": "Remove user from chat"
+        },
+        {
+          "info": {
+            "name": "List agents for transfer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_agents_for_transfer"
+          },
+          "docs": "List agents for transfer"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Threads",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List threads",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_threads"
+          },
+          "docs": "Get threads within a specific chat."
+        },
+        {
+          "info": {
+            "name": "Tag thread",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/tag_thread"
+          },
+          "docs": "Tag thread"
+        },
+        {
+          "info": {
+            "name": "Untag thread",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/untag_thread"
+          },
+          "docs": "Untag thread"
+        },
+        {
+          "info": {
+            "name": "Request thread summary",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/request_thread_summary"
+          },
+          "docs": "Generate an AI summary of a thread."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Events",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Send event",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_event"
+          },
+          "docs": "Send a message or event in a chat."
+        },
+        {
+          "info": {
+            "name": "Send event preview",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_event_preview"
+          },
+          "docs": "Send an unsaved message preview."
+        },
+        {
+          "info": {
+            "name": "Upload file",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/upload_file",
+            "body": {
+              "type": "multipart-form",
+              "data": [
+                {
+                  "name": "file",
+                  "type": "text",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "docs": "Upload a file (max 10MB)."
+        },
+        {
+          "info": {
+            "name": "Send rich message postback",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_rich_message_postback"
+          },
+          "docs": "Send rich message postback"
+        },
+        {
+          "info": {
+            "name": "Mark events as seen",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/mark_events_as_seen"
+          },
+          "docs": "Mark events as seen"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Properties",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Update chat properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/update_chat_properties"
+          },
+          "docs": "Update chat properties"
+        },
+        {
+          "info": {
+            "name": "Delete chat properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/delete_chat_properties"
+          },
+          "docs": "Delete chat properties"
+        },
+        {
+          "info": {
+            "name": "Update thread properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/update_thread_properties"
+          },
+          "docs": "Update thread properties"
+        },
+        {
+          "info": {
+            "name": "Delete thread properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/delete_thread_properties"
+          },
+          "docs": "Delete thread properties"
+        },
+        {
+          "info": {
+            "name": "Update event properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/update_event_properties"
+          },
+          "docs": "Update event properties"
+        },
+        {
+          "info": {
+            "name": "Delete event properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/delete_event_properties"
+          },
+          "docs": "Delete event properties"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Customers",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get customer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/get_customer"
+          },
+          "docs": "Get customer"
+        },
+        {
+          "info": {
+            "name": "Update customer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/update_customer"
+          },
+          "docs": "Update customer"
+        },
+        {
+          "info": {
+            "name": "Ban customer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/ban_customer"
+          },
+          "docs": "Ban customer"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Status",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Set routing status",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/set_routing_status"
+          },
+          "docs": "Set routing status"
+        },
+        {
+          "info": {
+            "name": "List routing statuses",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_routing_statuses"
+          },
+          "docs": "List routing statuses"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Other",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Send thinking indicator",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_thinking_indicator"
+          },
+          "docs": "Display AI processing message."
+        },
+        {
+          "info": {
+            "name": "Send typing indicator",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_typing_indicator"
+          },
+          "docs": "Send typing indicator"
+        },
+        {
+          "info": {
+            "name": "Multicast",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/multicast"
+          },
+          "docs": "Send non-chat notifications."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
