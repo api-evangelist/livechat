@@ -8,7 +8,7 @@ description: >-
   both Web API and RTM (real-time messaging) interfaces. Authentication uses
   OAuth 2.1 with Personal Access Tokens or full OAuth authorization code flow.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Live Chat
   - Customer Service
