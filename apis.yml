@@ -110,11 +110,11 @@ common:
     url: https://www.livechat.com
   - type: Documentation
     url: https://platform.text.com/docs
-  - type: Developer Console
+  - type: Console
     url: https://developers.livechat.com/console
   - type: GitHubOrganization
     url: https://github.com/livechat
-  - type: SignUp
+  - type: Signup
     url: https://accounts.livechat.com/signup
   - type: Pricing
     url: https://www.livechat.com/pricing/
