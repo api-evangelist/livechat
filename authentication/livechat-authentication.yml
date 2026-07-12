@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/livechat-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: OAuth 2.x bearer token or Personal Access Token.
+  sources:
+  - openapi/livechat-openapi.yml
