@@ -1,0 +1,14 @@
+{
+  "repo": "livechat",
+  "feeds": [
+    {
+      "source": "https://www.livechat.com/success/",
+      "feed_url": "https://www.livechat.com/success/index.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 11
+}
