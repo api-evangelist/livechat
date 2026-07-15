@@ -104,6 +104,8 @@ apis:
         url: https://platform.text.com/docs/data-reporting/reports-api
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/livechat-agentic-access.yml
   - type: DomainSecurity
     url: security/livechat-domain-security.yml
   - type: Authentication
