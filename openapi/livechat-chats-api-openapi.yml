@@ -1,0 +1,133 @@
+openapi: 3.1.0
+info:
+  title: LiveChat Agent Chat Chats API
+  description: REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.
+  version: v3.6
+  contact:
+    name: LiveChat / Text Platform
+    url: https://platform.text.com/docs/messaging/agent-chat-api
+servers:
+- url: https://api.livechatinc.com/v3.6
+  description: LiveChat Agent Chat API
+security:
+- bearerAuth: []
+tags:
+- name: Chats
+paths:
+  /agent/action/list_chats:
+    post:
+      tags:
+      - Chats
+      summary: List chats
+      description: Retrieve chat summaries accessible to the agent.
+      operationId: listChats
+      responses:
+        '200':
+          description: List of chats.
+  /agent/action/get_chat:
+    post:
+      tags:
+      - Chats
+      summary: Get chat
+      description: Fetch a single thread from a chat.
+      operationId: getChat
+      responses:
+        '200':
+          description: Chat details.
+  /agent/action/list_archives:
+    post:
+      tags:
+      - Chats
+      summary: List archives
+      description: List archived chats with thread events.
+      operationId: listArchives
+      responses:
+        '200':
+          description: Archived chats.
+  /agent/action/start_chat:
+    post:
+      tags:
+      - Chats
+      summary: Start chat
+      operationId: startChat
+      responses:
+        '200':
+          description: Chat started.
+  /agent/action/resume_chat:
+    post:
+      tags:
+      - Chats
+      summary: Resume chat
+      operationId: resumeChat
+      responses:
+        '200':
+          description: Chat resumed.
+  /agent/action/deactivate_chat:
+    post:
+      tags:
+      - Chats
+      summary: Deactivate chat
+      operationId: deactivateChat
+      responses:
+        '200':
+          description: Chat deactivated.
+  /agent/action/follow_chat:
+    post:
+      tags:
+      - Chats
+      summary: Follow chat
+      operationId: followChat
+      responses:
+        '200':
+          description: Following chat.
+  /agent/action/unfollow_chat:
+    post:
+      tags:
+      - Chats
+      summary: Unfollow chat
+      operationId: unfollowChat
+      responses:
+        '200':
+          description: Unfollowed.
+  /agent/action/transfer_chat:
+    post:
+      tags:
+      - Chats
+      summary: Transfer chat
+      operationId: transferChat
+      responses:
+        '200':
+          description: Chat transferred.
+  /agent/action/add_user_to_chat:
+    post:
+      tags:
+      - Chats
+      summary: Add user to chat
+      operationId: addUserToChat
+      responses:
+        '200':
+          description: User added.
+  /agent/action/remove_user_from_chat:
+    post:
+      tags:
+      - Chats
+      summary: Remove user from chat
+      operationId: removeUserFromChat
+      responses:
+        '200':
+          description: User removed.
+  /agent/action/list_agents_for_transfer:
+    post:
+      tags:
+      - Chats
+      summary: List agents for transfer
+      operationId: listAgentsForTransfer
+      responses:
+        '200':
+          description: Agents list.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.x bearer token or Personal Access Token.

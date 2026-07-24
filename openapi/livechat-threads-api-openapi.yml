@@ -1,0 +1,60 @@
+openapi: 3.1.0
+info:
+  title: LiveChat Agent Chat Chats Threads API
+  description: REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.
+  version: v3.6
+  contact:
+    name: LiveChat / Text Platform
+    url: https://platform.text.com/docs/messaging/agent-chat-api
+servers:
+- url: https://api.livechatinc.com/v3.6
+  description: LiveChat Agent Chat API
+security:
+- bearerAuth: []
+tags:
+- name: Threads
+paths:
+  /agent/action/list_threads:
+    post:
+      tags:
+      - Threads
+      summary: List threads
+      description: Get threads within a specific chat.
+      operationId: listThreads
+      responses:
+        '200':
+          description: List of threads.
+  /agent/action/tag_thread:
+    post:
+      tags:
+      - Threads
+      summary: Tag thread
+      operationId: tagThread
+      responses:
+        '200':
+          description: Thread tagged.
+  /agent/action/untag_thread:
+    post:
+      tags:
+      - Threads
+      summary: Untag thread
+      operationId: untagThread
+      responses:
+        '200':
+          description: Thread untagged.
+  /agent/action/request_thread_summary:
+    post:
+      tags:
+      - Threads
+      summary: Request thread summary
+      description: Generate an AI summary of a thread.
+      operationId: requestThreadSummary
+      responses:
+        '200':
+          description: Summary requested.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.x bearer token or Personal Access Token.

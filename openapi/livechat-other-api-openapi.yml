@@ -1,0 +1,51 @@
+openapi: 3.1.0
+info:
+  title: LiveChat Agent Chat Chats Other API
+  description: REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.
+  version: v3.6
+  contact:
+    name: LiveChat / Text Platform
+    url: https://platform.text.com/docs/messaging/agent-chat-api
+servers:
+- url: https://api.livechatinc.com/v3.6
+  description: LiveChat Agent Chat API
+security:
+- bearerAuth: []
+tags:
+- name: Other
+paths:
+  /agent/action/send_thinking_indicator:
+    post:
+      tags:
+      - Other
+      summary: Send thinking indicator
+      description: Display AI processing message.
+      operationId: sendThinkingIndicator
+      responses:
+        '200':
+          description: Indicator sent.
+  /agent/action/send_typing_indicator:
+    post:
+      tags:
+      - Other
+      summary: Send typing indicator
+      operationId: sendTypingIndicator
+      responses:
+        '200':
+          description: Indicator sent.
+  /agent/action/multicast:
+    post:
+      tags:
+      - Other
+      summary: Multicast
+      description: Send non-chat notifications.
+      operationId: multicast
+      responses:
+        '200':
+          description: Multicast sent.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.x bearer token or Personal Access Token.

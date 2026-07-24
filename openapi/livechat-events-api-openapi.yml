@@ -1,0 +1,80 @@
+openapi: 3.1.0
+info:
+  title: LiveChat Agent Chat Chats Events API
+  description: REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.
+  version: v3.6
+  contact:
+    name: LiveChat / Text Platform
+    url: https://platform.text.com/docs/messaging/agent-chat-api
+servers:
+- url: https://api.livechatinc.com/v3.6
+  description: LiveChat Agent Chat API
+security:
+- bearerAuth: []
+tags:
+- name: Events
+paths:
+  /agent/action/send_event:
+    post:
+      tags:
+      - Events
+      summary: Send event
+      description: Send a message or event in a chat.
+      operationId: sendEvent
+      responses:
+        '200':
+          description: Event sent.
+  /agent/action/send_event_preview:
+    post:
+      tags:
+      - Events
+      summary: Send event preview
+      description: Send an unsaved message preview.
+      operationId: sendEventPreview
+      responses:
+        '200':
+          description: Preview sent.
+  /agent/action/upload_file:
+    post:
+      tags:
+      - Events
+      summary: Upload file
+      description: Upload a file (max 10MB).
+      operationId: uploadFile
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: File uploaded.
+  /agent/action/send_rich_message_postback:
+    post:
+      tags:
+      - Events
+      summary: Send rich message postback
+      operationId: sendRichMessagePostback
+      responses:
+        '200':
+          description: Postback sent.
+  /agent/action/mark_events_as_seen:
+    post:
+      tags:
+      - Events
+      summary: Mark events as seen
+      operationId: markEventsAsSeen
+      responses:
+        '200':
+          description: Acknowledged.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.x bearer token or Personal Access Token.

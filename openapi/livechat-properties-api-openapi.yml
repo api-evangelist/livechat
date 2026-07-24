@@ -1,0 +1,76 @@
+openapi: 3.1.0
+info:
+  title: LiveChat Agent Chat Chats Properties API
+  description: REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.
+  version: v3.6
+  contact:
+    name: LiveChat / Text Platform
+    url: https://platform.text.com/docs/messaging/agent-chat-api
+servers:
+- url: https://api.livechatinc.com/v3.6
+  description: LiveChat Agent Chat API
+security:
+- bearerAuth: []
+tags:
+- name: Properties
+paths:
+  /agent/action/update_chat_properties:
+    post:
+      tags:
+      - Properties
+      summary: Update chat properties
+      operationId: updateChatProperties
+      responses:
+        '200':
+          description: Properties updated.
+  /agent/action/delete_chat_properties:
+    post:
+      tags:
+      - Properties
+      summary: Delete chat properties
+      operationId: deleteChatProperties
+      responses:
+        '200':
+          description: Properties deleted.
+  /agent/action/update_thread_properties:
+    post:
+      tags:
+      - Properties
+      summary: Update thread properties
+      operationId: updateThreadProperties
+      responses:
+        '200':
+          description: Properties updated.
+  /agent/action/delete_thread_properties:
+    post:
+      tags:
+      - Properties
+      summary: Delete thread properties
+      operationId: deleteThreadProperties
+      responses:
+        '200':
+          description: Properties deleted.
+  /agent/action/update_event_properties:
+    post:
+      tags:
+      - Properties
+      summary: Update event properties
+      operationId: updateEventProperties
+      responses:
+        '200':
+          description: Properties updated.
+  /agent/action/delete_event_properties:
+    post:
+      tags:
+      - Properties
+      summary: Delete event properties
+      operationId: deleteEventProperties
+      responses:
+        '200':
+          description: Properties deleted.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: OAuth 2.x bearer token or Personal Access Token.
