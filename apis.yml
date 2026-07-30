@@ -8,7 +8,19 @@ description: >-
   both Web API and RTM (real-time messaging) interfaces. Authentication uses
   OAuth 2.1 with Personal Access Tokens or full OAuth authorization code flow.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/livechat.png
 tags:
   - Live Chat
   - Customer Service
@@ -22,87 +34,152 @@ created: '2026-05-11'
 modified: '2026-05-30'
 specificationVersion: '0.19'
 apis:
-  - aid: livechat:agent-chat-api
-    name: LiveChat Agent Chat API
-    description: >-
-      REST and RTM APIs for agents to manage chats, send messages, transfer
-      conversations, and update statuses. Authenticated with OAuth 2.1
-      bearer tokens or Personal Access Tokens.
-    humanURL: https://platform.text.com/docs/messaging/agent-chat-api
-    baseURL: https://api.livechatinc.com/v3.5/agent
-    tags:
-      - Agents
-      - Chats
-      - Messaging
-    properties:
-      - type: Documentation
-        url: https://platform.text.com/docs/messaging/agent-chat-api
-  - aid: livechat:customer-chat-api
-    name: LiveChat Customer Chat API
-    description: >-
-      REST and RTM APIs for customers to start and participate in chats with
-      agents on LiveChat-powered websites. Uses customer access tokens.
-    humanURL: https://platform.text.com/docs/messaging/customer-chat-api
-    baseURL: https://api.livechatinc.com/v3.5/customer
-    tags:
-      - Customers
-      - Chats
-      - Messaging
-    properties:
-      - type: Documentation
-        url: https://platform.text.com/docs/messaging/customer-chat-api
-  - aid: livechat:configuration-api
-    name: LiveChat Configuration API
-    description: >-
-      Manage agents, groups, bots, tags, webhooks, properties, and other
-      account configuration for a LiveChat organization.
-    humanURL: https://platform.text.com/docs/management/configuration-api
-    baseURL: https://api.livechatinc.com/v3.5/configuration
-    tags:
-      - Configuration
-      - Agents
-      - Webhooks
-      - Bots
-    properties:
-      - type: Documentation
-        url: https://platform.text.com/docs/management/configuration-api
-  - aid: livechat:webhooks-and-rtm
-    name: LiveChat Webhooks and RTM API
-    description: >-
-      Asynchronous event surfaces for LiveChat. HTTP webhooks
-      registered through the Configuration API and the Agent Chat
-      Real-Time Messaging (RTM) WebSocket API share the same event
-      payloads (incoming_chat, incoming_event, chat_user_added,
-      chat_user_removed, customer_updated, agent_*, bot_*, group_*,
-      and more).
-    humanURL: https://platform.text.com/docs/messaging/agent-chat-api
-    baseURL: wss://api.livechatinc.com/v3.5/agent/rtm/ws
-    tags:
-      - Webhooks
-      - Real-Time Messaging
-      - WebSocket
-      - Events
-    properties:
-      - type: Documentation
-        url: https://platform.text.com/docs/messaging/agent-chat-api
-      - type: AsyncAPI
-        url: >-
-          https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/openapi/livechat-asyncapi.yml
-  - aid: livechat:reports-api
-    name: LiveChat Reports API
-    description: >-
-      Retrieve reporting data for chats, agents, tags, and customer activity
-      across the LiveChat organization.
-    humanURL: https://platform.text.com/docs/data-reporting/reports-api
-    baseURL: https://api.livechatinc.com/v3.5/reports
-    tags:
-      - Reporting
-      - Analytics
-      - Metrics
-    properties:
-      - type: Documentation
-        url: https://platform.text.com/docs/data-reporting/reports-api
-
+- aid: livechat:agent-chat-api
+  name: LiveChat Agent Chat API
+  description: >-
+    REST and RTM APIs for agents to manage chats, send messages, transfer conversations, and update statuses.
+    Authenticated with OAuth 2.1 bearer tokens or Personal Access Tokens.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Agents
+  - Chats
+  - Messaging
+  properties:
+  - type: Documentation
+    url: https://platform.text.com/docs/messaging/agent-chat-api
+- aid: livechat:customer-chat-api
+  name: LiveChat Customer Chat API
+  description: >-
+    REST and RTM APIs for customers to start and participate in chats with agents on LiveChat-powered
+    websites. Uses customer access tokens.
+  humanURL: https://platform.text.com/docs/messaging/customer-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/customer
+  tags:
+  - Customers
+  - Chats
+  - Messaging
+  properties:
+  - type: Documentation
+    url: https://platform.text.com/docs/messaging/customer-chat-api
+- aid: livechat:configuration-api
+  name: LiveChat Configuration API
+  description: >-
+    Manage agents, groups, bots, tags, webhooks, properties, and other account configuration for a LiveChat
+    organization.
+  humanURL: https://platform.text.com/docs/management/configuration-api
+  baseURL: https://api.livechatinc.com/v3.5/configuration
+  tags:
+  - Configuration
+  - Agents
+  - Webhooks
+  - Bots
+  properties:
+  - type: Documentation
+    url: https://platform.text.com/docs/management/configuration-api
+- aid: livechat:webhooks-and-rtm
+  name: LiveChat Webhooks and RTM API
+  description: >-
+    Asynchronous event surfaces for LiveChat. HTTP webhooks registered through the Configuration API and
+    the Agent Chat Real-Time Messaging (RTM) WebSocket API share the same event payloads (incoming_chat,
+    incoming_event, chat_user_added, chat_user_removed, customer_updated, agent_*, bot_*, group_*, and
+    more).
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: wss://api.livechatinc.com/v3.5/agent/rtm/ws
+  tags:
+  - Webhooks
+  - Real-Time Messaging
+  - WebSocket
+  - Events
+  properties:
+  - type: Documentation
+    url: https://platform.text.com/docs/messaging/agent-chat-api
+  - type: AsyncAPI
+    url: >-
+      https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/openapi/livechat-asyncapi.yml
+- aid: livechat:reports-api
+  name: LiveChat Reports API
+  description: >-
+    Retrieve reporting data for chats, agents, tags, and customer activity across the LiveChat organization.
+  humanURL: https://platform.text.com/docs/data-reporting/reports-api
+  baseURL: https://api.livechatinc.com/v3.5/reports
+  tags:
+  - Reporting
+  - Analytics
+  - Metrics
+  properties:
+  - type: Documentation
+    url: https://platform.text.com/docs/data-reporting/reports-api
+- aid: livechat:livechat-chats-api
+  name: LiveChat Chats API
+  description: The Chats API from LiveChat — 12 operation(s) for chats.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Chats
+  properties:
+  - type: OpenAPI
+    url: openapi/livechat-chats-api-openapi.yml
+- aid: livechat:livechat-customers-api
+  name: LiveChat Customers API
+  description: The Customers API from LiveChat — 3 operation(s) for customers.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Customers
+  properties:
+  - type: OpenAPI
+    url: openapi/livechat-customers-api-openapi.yml
+- aid: livechat:livechat-events-api
+  name: LiveChat Events API
+  description: The Events API from LiveChat — 5 operation(s) for events.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Events
+  properties:
+  - type: OpenAPI
+    url: openapi/livechat-events-api-openapi.yml
+- aid: livechat:livechat-other-api
+  name: LiveChat Other API
+  description: The Other API from LiveChat — 3 operation(s) for other.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Other
+  properties:
+  - type: OpenAPI
+    url: openapi/livechat-other-api-openapi.yml
+- aid: livechat:livechat-properties-api
+  name: LiveChat Properties API
+  description: The Properties API from LiveChat — 6 operation(s) for properties.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Properties
+  properties:
+  - type: OpenAPI
+    url: openapi/livechat-properties-api-openapi.yml
+- aid: livechat:livechat-status-api
+  name: LiveChat Status API
+  description: The Status API from LiveChat — 2 operation(s) for status.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Status
+  properties:
+  - type: OpenAPI
+    url: openapi/livechat-status-api-openapi.yml
+- aid: livechat:livechat-threads-api
+  name: LiveChat Threads API
+  description: The Threads API from LiveChat — 4 operation(s) for threads.
+  humanURL: https://platform.text.com/docs/messaging/agent-chat-api
+  baseURL: https://api.livechatinc.com/v3.5/agent
+  tags:
+  - Threads
+  properties:
+  - type: OpenAPI
+    url: openapi/livechat-threads-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/livechat-agentic-access.yml
