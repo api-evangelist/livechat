@@ -2,6 +2,13 @@
   "repo": "livechat",
   "feeds": [
     {
+      "source": "https://www.livechat.com/success/index.xml",
+      "feed_url": "https://www.livechat.com/success/index.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://www.livechat.com/success/",
       "feed_url": "https://www.livechat.com/success/index.xml",
       "title": "",
@@ -9,6 +16,6 @@
       "method": "discovered"
     }
   ],
-  "fetched": "2026-07-11T11:50:51Z",
-  "post_count": 11
+  "fetched": "2026-08-01T15:49:00Z",
+  "post_count": 55
 }

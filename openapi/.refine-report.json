@@ -1,0 +1,26 @@
+{
+  "provider": "livechat",
+  "sources": [
+    "livechat-chats-api-openapi.yml",
+    "livechat-customers-api-openapi.yml",
+    "livechat-events-api-openapi.yml",
+    "livechat-other-api-openapi.yml",
+    "livechat-properties-api-openapi.yml",
+    "livechat-status-api-openapi.yml",
+    "livechat-threads-api-openapi.yml"
+  ],
+  "outputs": [
+    "livechat-chats-api-openapi.yml",
+    "livechat-customers-api-openapi.yml",
+    "livechat-events-api-openapi.yml",
+    "livechat-other-api-openapi.yml",
+    "livechat-properties-api-openapi.yml",
+    "livechat-status-api-openapi.yml",
+    "livechat-threads-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
