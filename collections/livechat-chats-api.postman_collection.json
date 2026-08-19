@@ -1,0 +1,878 @@
+{
+  "item": [
+    {
+      "id": "82ac0845-4cd6-4e78-a1ec-adf22998610a",
+      "name": "Chats",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "bd02029c-b915-4975-8bfa-05f34fe2f1d3",
+          "name": "List chats",
+          "request": {
+            "name": "List chats",
+            "description": {
+              "content": "Retrieve chat summaries accessible to the agent.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "list_chats"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "45ec2839-c82f-4e01-84f7-f8feadbc9dde",
+              "name": "List of chats.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "list_chats"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bbb8e030-e0c7-46b5-a75f-74a1468394b1",
+          "name": "Get chat",
+          "request": {
+            "name": "Get chat",
+            "description": {
+              "content": "Fetch a single thread from a chat.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "get_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f7d8f84c-52af-4fbc-811f-b6f94ec72c93",
+              "name": "Chat details.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "get_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f77c996d-f07d-478a-adee-53cc635e63c3",
+          "name": "List archives",
+          "request": {
+            "name": "List archives",
+            "description": {
+              "content": "List archived chats with thread events.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "list_archives"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a89bcd9a-d539-4caf-9a34-be34085811fa",
+              "name": "Archived chats.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "list_archives"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3783603a-c461-4d22-9e06-c407f3a3438a",
+          "name": "Start chat",
+          "request": {
+            "name": "Start chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "start_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "279749a7-5c20-46bc-8fc3-4119e8a5e945",
+              "name": "Chat started.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "start_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ecadfc59-5a79-4718-bdbc-2d218297c91b",
+          "name": "Resume chat",
+          "request": {
+            "name": "Resume chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "resume_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0186863c-b501-45c0-a5b0-fd0bc96e467f",
+              "name": "Chat resumed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "resume_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "330b4f91-33ad-4715-bc43-3967b80c88ba",
+          "name": "Deactivate chat",
+          "request": {
+            "name": "Deactivate chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "deactivate_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5faf91c4-aa40-4d24-ad36-8b75689575e7",
+              "name": "Chat deactivated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "deactivate_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "abd63f05-a7a3-4dce-b206-c7df26e1e822",
+          "name": "Follow chat",
+          "request": {
+            "name": "Follow chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "follow_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "22547207-a360-4420-8bf9-2884ae4e8b74",
+              "name": "Following chat.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "follow_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4e396718-46e1-4690-b5ba-33d09513ddb8",
+          "name": "Unfollow chat",
+          "request": {
+            "name": "Unfollow chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "unfollow_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "74080e59-dbe2-441e-82f0-e294520cd051",
+              "name": "Unfollowed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "unfollow_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f8d05203-547b-4db4-8fd1-9f4a9426e124",
+          "name": "Transfer chat",
+          "request": {
+            "name": "Transfer chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "transfer_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "134b8e11-81a0-4199-a549-6a17ab2635fb",
+              "name": "Chat transferred.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "transfer_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8b8bfd4b-3063-42c1-8e5e-2b305f501567",
+          "name": "Add user to chat",
+          "request": {
+            "name": "Add user to chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "add_user_to_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f8d38868-ecd5-4bee-b86d-c5a28d7019dc",
+              "name": "User added.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "add_user_to_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b213d3f1-5a55-4fb8-b1c3-456cc8bc1a28",
+          "name": "Remove user from chat",
+          "request": {
+            "name": "Remove user from chat",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "remove_user_from_chat"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9de3fdab-778d-4f6a-8b53-ae17214b430a",
+              "name": "User removed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "remove_user_from_chat"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "24a4caa4-d6ae-44b9-9870-ac48c3c1ff30",
+          "name": "List agents for transfer",
+          "request": {
+            "name": "List agents for transfer",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "list_agents_for_transfer"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5cd45846-dd61-4716-a56b-205e8d0a9809",
+              "name": "Agents list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "list_agents_for_transfer"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.livechatinc.com/v3.6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "0591f66c-b25e-4e87-bfc1-f379a0f8f98a",
+    "name": "LiveChat Agent Chat Chats API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.\n\nContact Support:\n Name: LiveChat / Text Platform",
+      "type": "text/plain"
+    }
+  }
+}

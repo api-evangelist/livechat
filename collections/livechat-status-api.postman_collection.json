@@ -1,0 +1,179 @@
+{
+  "item": [
+    {
+      "id": "93f8f900-d6ad-4141-8d74-25c63370626e",
+      "name": "Status",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "586f8832-f770-4eaf-a5a3-acd4728cfa74",
+          "name": "Set routing status",
+          "request": {
+            "name": "Set routing status",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "set_routing_status"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ccda79a9-b368-4bb4-9602-a01db2a13553",
+              "name": "Status updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "set_routing_status"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2e14b5f8-a147-4907-8899-f3e6b7f07c13",
+          "name": "List routing statuses",
+          "request": {
+            "name": "List routing statuses",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "list_routing_statuses"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d2c78c80-e5fc-41af-915f-052bc91068e6",
+              "name": "Agent statuses.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "list_routing_statuses"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.livechatinc.com/v3.6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "9b7976fb-350a-461b-bba5-cb0bf9a8f46e",
+    "name": "LiveChat Agent Chat Chats Status API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.\n\nContact Support:\n Name: LiveChat / Text Platform",
+      "type": "text/plain"
+    }
+  }
+}

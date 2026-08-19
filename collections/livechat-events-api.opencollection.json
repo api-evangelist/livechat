@@ -1,0 +1,89 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Agent Chat Chats Events API",
+    "version": "v3.6"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Events",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Send event",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_event"
+          },
+          "docs": "Send a message or event in a chat."
+        },
+        {
+          "info": {
+            "name": "Send event preview",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_event_preview"
+          },
+          "docs": "Send an unsaved message preview."
+        },
+        {
+          "info": {
+            "name": "Upload file",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/upload_file",
+            "body": {
+              "type": "multipart-form",
+              "data": [
+                {
+                  "name": "file",
+                  "type": "text",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "docs": "Upload a file (max 10MB)."
+        },
+        {
+          "info": {
+            "name": "Send rich message postback",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_rich_message_postback"
+          },
+          "docs": "Send rich message postback"
+        },
+        {
+          "info": {
+            "name": "Mark events as seen",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/mark_events_as_seen"
+          },
+          "docs": "Mark events as seen"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

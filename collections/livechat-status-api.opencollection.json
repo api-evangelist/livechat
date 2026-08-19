@@ -1,0 +1,46 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Agent Chat Chats Status API",
+    "version": "v3.6"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Status",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Set routing status",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/set_routing_status"
+          },
+          "docs": "Set routing status"
+        },
+        {
+          "info": {
+            "name": "List routing statuses",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_routing_statuses"
+          },
+          "docs": "List routing statuses"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

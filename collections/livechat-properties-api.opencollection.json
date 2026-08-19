@@ -1,0 +1,90 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Agent Chat Chats Properties API",
+    "version": "v3.6"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Properties",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Update chat properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/update_chat_properties"
+          },
+          "docs": "Update chat properties"
+        },
+        {
+          "info": {
+            "name": "Delete chat properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/delete_chat_properties"
+          },
+          "docs": "Delete chat properties"
+        },
+        {
+          "info": {
+            "name": "Update thread properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/update_thread_properties"
+          },
+          "docs": "Update thread properties"
+        },
+        {
+          "info": {
+            "name": "Delete thread properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/delete_thread_properties"
+          },
+          "docs": "Delete thread properties"
+        },
+        {
+          "info": {
+            "name": "Update event properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/update_event_properties"
+          },
+          "docs": "Update event properties"
+        },
+        {
+          "info": {
+            "name": "Delete event properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/delete_event_properties"
+          },
+          "docs": "Delete event properties"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

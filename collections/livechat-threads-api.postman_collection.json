@@ -1,0 +1,323 @@
+{
+  "item": [
+    {
+      "id": "8c956be6-4a20-4db7-8b7b-b2bca84cfe2a",
+      "name": "Threads",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6ee68795-6ed5-4f13-b254-d3bd3518e7ca",
+          "name": "List threads",
+          "request": {
+            "name": "List threads",
+            "description": {
+              "content": "Get threads within a specific chat.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "list_threads"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1906c9cf-12cd-4a66-a6b3-cf4990a832c9",
+              "name": "List of threads.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "list_threads"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "425e2d16-b68c-4d3b-abfb-6057e354512e",
+          "name": "Tag thread",
+          "request": {
+            "name": "Tag thread",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "tag_thread"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "218cf8e9-2b72-4caf-aa91-0c7e5418098b",
+              "name": "Thread tagged.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "tag_thread"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "229b85c1-b827-4a35-8fc2-9f20ccf1a393",
+          "name": "Untag thread",
+          "request": {
+            "name": "Untag thread",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "untag_thread"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a63f9f38-1a02-4f37-894b-cba93c75cc9d",
+              "name": "Thread untagged.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "untag_thread"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "92264742-8410-4d65-87a9-129bc48974a3",
+          "name": "Request thread summary",
+          "request": {
+            "name": "Request thread summary",
+            "description": {
+              "content": "Generate an AI summary of a thread.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "request_thread_summary"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "be96b003-dd98-4769-9cd3-f360f9826f15",
+              "name": "Summary requested.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "request_thread_summary"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.livechatinc.com/v3.6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "5f002517-3938-4908-a506-49f92c3ab7be",
+    "name": "LiveChat Agent Chat Chats Threads API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.\n\nContact Support:\n Name: LiveChat / Text Platform",
+      "type": "text/plain"
+    }
+  }
+}

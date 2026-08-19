@@ -1,0 +1,455 @@
+{
+  "item": [
+    {
+      "id": "8acf704b-32f4-4ff2-a24b-284a0bcc5f5b",
+      "name": "Properties",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2b9440d4-f5a3-4df7-a3f2-d7fbbd797eb3",
+          "name": "Update chat properties",
+          "request": {
+            "name": "Update chat properties",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "update_chat_properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9e2b9810-6eac-4573-943a-f837d0b9cb16",
+              "name": "Properties updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "update_chat_properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d41df5d2-85b4-4c06-97fa-088324c82cb4",
+          "name": "Delete chat properties",
+          "request": {
+            "name": "Delete chat properties",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "delete_chat_properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bd6cbbb7-3a2e-47ea-9be5-83da28f8edb0",
+              "name": "Properties deleted.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "delete_chat_properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0b510551-863e-4840-848d-21ed9f606dd8",
+          "name": "Update thread properties",
+          "request": {
+            "name": "Update thread properties",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "update_thread_properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "11fae8de-15d0-434c-b6e8-25bfcb04cd00",
+              "name": "Properties updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "update_thread_properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7cef26a3-ace9-4e99-9fbe-d3a96c621a49",
+          "name": "Delete thread properties",
+          "request": {
+            "name": "Delete thread properties",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "delete_thread_properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f13be679-8074-4325-aa54-4f84f06d7b0f",
+              "name": "Properties deleted.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "delete_thread_properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4446ea0e-5aad-4ea3-b3f8-26dc876c8500",
+          "name": "Update event properties",
+          "request": {
+            "name": "Update event properties",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "update_event_properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "164985b6-5160-4033-a54a-a86364333c2b",
+              "name": "Properties updated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "update_event_properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4a1b5d97-6f73-42f6-aaf3-003e650a283d",
+          "name": "Delete event properties",
+          "request": {
+            "name": "Delete event properties",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "delete_event_properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "23f36883-eb90-4185-bc7d-c11d96429074",
+              "name": "Properties deleted.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "delete_event_properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.livechatinc.com/v3.6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "90322ff7-69f1-4e7a-a9ed-26cf47f01720",
+    "name": "LiveChat Agent Chat Chats Properties API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.\n\nContact Support:\n Name: LiveChat / Text Platform",
+      "type": "text/plain"
+    }
+  }
+}

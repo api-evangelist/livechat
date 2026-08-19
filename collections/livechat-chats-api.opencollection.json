@@ -1,0 +1,156 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Agent Chat Chats API",
+    "version": "v3.6"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Chats",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List chats",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_chats"
+          },
+          "docs": "Retrieve chat summaries accessible to the agent."
+        },
+        {
+          "info": {
+            "name": "Get chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/get_chat"
+          },
+          "docs": "Fetch a single thread from a chat."
+        },
+        {
+          "info": {
+            "name": "List archives",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_archives"
+          },
+          "docs": "List archived chats with thread events."
+        },
+        {
+          "info": {
+            "name": "Start chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/start_chat"
+          },
+          "docs": "Start chat"
+        },
+        {
+          "info": {
+            "name": "Resume chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/resume_chat"
+          },
+          "docs": "Resume chat"
+        },
+        {
+          "info": {
+            "name": "Deactivate chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/deactivate_chat"
+          },
+          "docs": "Deactivate chat"
+        },
+        {
+          "info": {
+            "name": "Follow chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/follow_chat"
+          },
+          "docs": "Follow chat"
+        },
+        {
+          "info": {
+            "name": "Unfollow chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/unfollow_chat"
+          },
+          "docs": "Unfollow chat"
+        },
+        {
+          "info": {
+            "name": "Transfer chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/transfer_chat"
+          },
+          "docs": "Transfer chat"
+        },
+        {
+          "info": {
+            "name": "Add user to chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/add_user_to_chat"
+          },
+          "docs": "Add user to chat"
+        },
+        {
+          "info": {
+            "name": "Remove user from chat",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/remove_user_from_chat"
+          },
+          "docs": "Remove user from chat"
+        },
+        {
+          "info": {
+            "name": "List agents for transfer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_agents_for_transfer"
+          },
+          "docs": "List agents for transfer"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

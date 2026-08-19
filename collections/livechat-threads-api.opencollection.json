@@ -1,0 +1,68 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Agent Chat Chats Threads API",
+    "version": "v3.6"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Threads",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List threads",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/list_threads"
+          },
+          "docs": "Get threads within a specific chat."
+        },
+        {
+          "info": {
+            "name": "Tag thread",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/tag_thread"
+          },
+          "docs": "Tag thread"
+        },
+        {
+          "info": {
+            "name": "Untag thread",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/untag_thread"
+          },
+          "docs": "Untag thread"
+        },
+        {
+          "info": {
+            "name": "Request thread summary",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/request_thread_summary"
+          },
+          "docs": "Generate an AI summary of a thread."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

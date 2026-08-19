@@ -1,0 +1,57 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "LiveChat Agent Chat Chats Other API",
+    "version": "v3.6"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Other",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Send thinking indicator",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_thinking_indicator"
+          },
+          "docs": "Display AI processing message."
+        },
+        {
+          "info": {
+            "name": "Send typing indicator",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/send_typing_indicator"
+          },
+          "docs": "Send typing indicator"
+        },
+        {
+          "info": {
+            "name": "Multicast",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.livechatinc.com/v3.6/agent/action/multicast"
+          },
+          "docs": "Send non-chat notifications."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

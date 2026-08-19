@@ -1,0 +1,254 @@
+{
+  "item": [
+    {
+      "id": "2fa3c108-216a-4d83-af63-9b4a971792f7",
+      "name": "Other",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d5687d5b-26a9-43d4-b7f7-e8d96b63b375",
+          "name": "Send thinking indicator",
+          "request": {
+            "name": "Send thinking indicator",
+            "description": {
+              "content": "Display AI processing message.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "send_thinking_indicator"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f9c55569-398c-4eb7-b310-d8a5ad28ede2",
+              "name": "Indicator sent.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "send_thinking_indicator"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e53f7f37-87dc-496f-b11f-957ed3b4e528",
+          "name": "Send typing indicator",
+          "request": {
+            "name": "Send typing indicator",
+            "description": {},
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "send_typing_indicator"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "25ef6e0d-3b8e-4b3a-9003-48fd8d9addf5",
+              "name": "Indicator sent.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "send_typing_indicator"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "39e9840d-e556-4537-8552-03793d7161b1",
+          "name": "Multicast",
+          "request": {
+            "name": "Multicast",
+            "description": {
+              "content": "Send non-chat notifications.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "agent",
+                "action",
+                "multicast"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "69d4767b-2d1f-4d26-bcef-32c8fbe10765",
+              "name": "Multicast sent.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "agent",
+                    "action",
+                    "multicast"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.livechatinc.com/v3.6",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "01468eec-8e8e-422d-895d-d6bbacdf4306",
+    "name": "LiveChat Agent Chat Chats Other API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST endpoints (Text Platform v3.6 Agent Chat API) for agents to manage chats, send messages, transfer conversations, and update statuses. All actions are POST requests under /agent/action/{action} and authenticated with OAuth 2.x bearer tokens or Personal Access Tokens.\n\nContact Support:\n Name: LiveChat / Text Platform",
+      "type": "text/plain"
+    }
+  }
+}
