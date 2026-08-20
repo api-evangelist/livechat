@@ -24,6 +24,13 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/livechat.p
 tags:
   - Live Chat
   - Customer Service
+  - Customer-Support
+  - Messaging
+  - Sales
+  - Help Desk
+tags_raw:
+  - Live Chat
+  - Customer Service
   - Customer Support
   - Messaging
   - Sales
@@ -72,6 +79,11 @@ apis:
   tags:
   - Configuration
   - Agents
+  - Webhook
+  - Bots
+  tags_raw:
+  - Configuration
+  - Agents
   - Webhooks
   - Bots
   properties:
@@ -87,6 +99,11 @@ apis:
   humanURL: https://platform.text.com/docs/messaging/agent-chat-api
   baseURL: wss://api.livechatinc.com/v3.5/agent/rtm/ws
   tags:
+  - Webhook
+  - Real-Time Messaging
+  - WebSocket
+  - Event
+  tags_raw:
   - Webhooks
   - Real-Time Messaging
   - WebSocket
@@ -136,6 +153,8 @@ apis:
   humanURL: https://platform.text.com/docs/messaging/agent-chat-api
   baseURL: https://api.livechatinc.com/v3.5/agent
   tags:
+  - Event
+  tags_raw:
   - Events
   properties:
   - type: OpenAPI
@@ -145,7 +164,8 @@ apis:
   description: The Other API from LiveChat — 3 operation(s) for other.
   humanURL: https://platform.text.com/docs/messaging/agent-chat-api
   baseURL: https://api.livechatinc.com/v3.5/agent
-  tags:
+  tags: []
+  tags_raw:
   - Other
   properties:
   - type: OpenAPI
