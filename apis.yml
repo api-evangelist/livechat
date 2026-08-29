@@ -8,6 +8,18 @@ description: >-
   both Web API and RTM (real-time messaging) interfaces. Authentication uses
   OAuth 2.1 with Personal Access Tokens or full OAuth authorization code flow.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
