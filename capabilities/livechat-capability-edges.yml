@@ -1,0 +1,26 @@
+slug: livechat
+provider: LiveChat
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Telecommunications
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: Chats
+  spec_file: livechat-chats-api-openapi.yml
+  capability_id: BC-430.10
+  capability_id_l1: BC-430
+  capability_name: Customer Inquiry Management
+  confidence: 0.75
+  evidence: POST /agent/action/start_chat  startChat  Start chat; POST /agent/action/transfer_chat  transferChat  Transfer
+    chat; "List agents for transfer"
+  reason: Operations let support agents start, resume, follow, transfer and deactivate live customer chats
+    — inbound contact handling and routing within a customer service platform, i.e. Customer Inquiry Management.
+    Some ambiguity with contact-centre operations.

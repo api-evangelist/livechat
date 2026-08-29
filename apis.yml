@@ -213,6 +213,9 @@ apis:
   - type: OpenAPI
     url: openapi/livechat-threads-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/livechat-capability-edges.yml
+    name: LiveChat Business Capability Map
   - type: AgenticAccess
     url: agentic-access/livechat-agentic-access.yml
   - type: DomainSecurity
