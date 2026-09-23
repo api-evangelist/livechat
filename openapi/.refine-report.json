@@ -1,13 +1,7 @@
 {
   "provider": "livechat",
   "sources": [
-    "livechat-chats-api-openapi.yml",
-    "livechat-customers-api-openapi.yml",
-    "livechat-events-api-openapi.yml",
-    "livechat-other-api-openapi.yml",
-    "livechat-properties-api-openapi.yml",
-    "livechat-status-api-openapi.yml",
-    "livechat-threads-api-openapi.yml"
+    "_original/livechat-openapi.yml"
   ],
   "outputs": [
     "livechat-chats-api-openapi.yml",
@@ -21,6 +15,18 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "livechat-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "livechat-chats-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "livechat-customers-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "livechat-events-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "livechat-other-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "livechat-properties-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "livechat-status-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "livechat-threads-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
