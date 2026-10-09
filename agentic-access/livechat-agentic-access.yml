@@ -1,4 +1,4 @@
-generated: '2026-09-16'
+generated: '2026-09-23'
 method: generated
 source: openapi/livechat-chats-api-openapi.yml, openapi/livechat-customers-api-openapi.yml,
   openapi/livechat-events-api-openapi.yml, openapi/livechat-other-api-openapi.yml, openapi/livechat-properties-api-openapi.yml,
@@ -9,9 +9,11 @@ description: Recommended x-agentic-access execution contracts, classified heuris
 summary:
   operations: 35
   by_action_class:
-    acting: 35
+    connected: 6
+    acting: 29
   by_consequence:
-    write: 28
+    read: 6
+    write: 22
     physical: 7
   human_in_the_loop_required: 0
 operations:
@@ -19,50 +21,32 @@ operations:
   method: post
   operationId: listChats
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /agent/action/get_chat
   method: post
   operationId: getChat
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /agent/action/list_archives
   method: post
   operationId: listArchives
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /agent/action/start_chat
   method: post
   operationId: startChat
@@ -215,18 +199,12 @@ operations:
   method: post
   operationId: getCustomer
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /agent/action/update_customer
   method: post
   operationId: updateCustomer
@@ -513,34 +491,22 @@ operations:
   method: post
   operationId: listRoutingStatuses
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /agent/action/list_threads
   method: post
   operationId: listThreads
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /agent/action/tag_thread
   method: post
   operationId: tagThread

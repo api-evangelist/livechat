@@ -19,3 +19,18 @@ tools_note: No tool list captured. This manifest records a PROBED, reachable end
   not perform. Run signals/audit_mcp_authorship.py --probe to enumerate tools and settle platform-vs-provider
   authorship. Do NOT derive a tool list from the OpenAPI and store it here -- that is a candidate manifest,
   and it belongs under an X-MCPServerCandidate pointer.
+rfc9728:
+  endpoint: https://mcp.text.com/mcp
+  metadata_url: https://mcp.text.com/.well-known/oauth-protected-resource
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://mcp.text.com
+    authorization_servers:
+    - https://mcp.text.com
+    scopes_supported:
+    - accounts--all:ro,accounts--my:ro,accounts.roles--all:ro,agents--all:ro,agents-bot--all:ro,chats--access:ro,chats--access:rw,chats--all:ro,customers.ban:rw,customers:rw,groups--all:ro,reports_read,routing_read,tags--all:ro,tickets_manage,tickets_write
+    bearer_methods_supported:
+    - header
