@@ -40,7 +40,7 @@
     - connectors/applications/livechat-partner
     vendor_link: https://www.livechat.com/
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: livechat-meltano
   label: Meltano
@@ -69,5 +69,5 @@
     quality:
     - unknown
     builder: 'community (Meltano Hub variant maintainers: pathlight)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
