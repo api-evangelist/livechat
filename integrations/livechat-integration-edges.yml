@@ -1,12 +1,22 @@
-generated: '2026-10-15'
+generated: '2026-10-20'
 method: searched
+source:
+- woocommerce/integrations/woocommerce-integration-edges.yml
+- https://zapier.com/apps/livechat/integrations
+- https://n8n.io/integrations/livechat/
+- https://composio.dev/toolkits/livechat
+- https://monid.ai/tools/livechat
 checked:
 - https://fivetran.com/docs-sitemap.xml
 - https://fivetran.com/docs/connectors/partner-built-program
 - https://github.com/meltano/hub
 - woocommerce/integrations/woocommerce-integration-edges.yml
-source:
-- woocommerce/integrations/woocommerce-integration-edges.yml
+- https://composio.dev/toolkits/livechat
+- https://monid.ai/tools/livechat
+- https://n8n.io/integrations/livechat/
+- https://zapier.com/apps/livechat/integrations
+summary: null
+marketplace_apps: []
 edges:
 - partner_name: WooCommerce (own)
   partner: woocommerce
@@ -80,3 +90,4 @@ edges:
     builder: 'community (Meltano Hub variant maintainers: pathlight)'
   detected_by: sweep-data-integration.py
   first_seen: '2026-10-18'
+templates: []
