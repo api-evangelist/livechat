@@ -1,4 +1,4 @@
-# LiveChat (livechat)
+# LiveChat
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,137 +66,125 @@
 
 LiveChat is a customer service and live chat platform used by businesses to engage website visitors, run sales conversations, and route support tickets across agent teams. The Text Platform (which powers LiveChat) exposes a suite of REST APIs for chats, agents, customers, configuration, and reporting, with both Web API and RTM (real-time messaging) interfaces. Authentication uses OAuth 2.1 with Personal Access Tokens or full OAuth authorization code flow.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/apis.yml)
+**Areas:** Live Chat · Customer Service · Messaging · Sales · Help Desk
 
-## Scope
+## LiveChat on APIs.io
 
-- **Type:** Index
+Everything profiled for LiveChat is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/livechat/](https://apis.io/providers/livechat/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (12)
 
-- Live Chat
-- Customer Service
-- Customer Support
-- Messaging
-- Sales
-- Help Desk
+- [LiveChat Agent Chat API](https://apis.io/apis/livechat/agent-chat-api/) — REST and RTM APIs for agents to manage chats, send messages, transfer conversations, and update statuses. Authenticated with OAuth 2.1 bearer tokens or…
+- [LiveChat Customer Chat API](https://apis.io/apis/livechat/customer-chat-api/) — REST and RTM APIs for customers to start and participate in chats with agents on LiveChat-powered websites. Uses customer access tokens.
+- [LiveChat Configuration API](https://apis.io/apis/livechat/configuration-api/) — Manage agents, groups, bots, tags, webhooks, properties, and other account configuration for a LiveChat organization.
+- [LiveChat Webhooks and RTM API](https://apis.io/apis/livechat/webhooks-and-rtm/) — Asynchronous event surfaces for LiveChat. HTTP webhooks registered through the Configuration API and the Agent Chat Real-Time Messaging (RTM) WebSocket API…
+- [LiveChat Reports API](https://apis.io/apis/livechat/reports-api/) — Retrieve reporting data for chats, agents, tags, and customer activity across the LiveChat organization.
+- [LiveChat Chats API](https://apis.io/apis/livechat/livechat-chats-api/) — The Chats API from LiveChat — 12 operation(s) for chats.
+- [LiveChat Customers API](https://apis.io/apis/livechat/livechat-customers-api/) — The Customers API from LiveChat — 3 operation(s) for customers.
+- [LiveChat Events API](https://apis.io/apis/livechat/livechat-events-api/) — The Events API from LiveChat — 5 operation(s) for events.
+- [LiveChat Other API](https://apis.io/apis/livechat/livechat-other-api/) — The Other API from LiveChat — 3 operation(s) for other.
+- [LiveChat Properties API](https://apis.io/apis/livechat/livechat-properties-api/) — The Properties API from LiveChat — 6 operation(s) for properties.
+- [LiveChat Status API](https://apis.io/apis/livechat/livechat-status-api/) — The Status API from LiveChat — 2 operation(s) for status.
+- [LiveChat Threads API](https://apis.io/apis/livechat/livechat-threads-api/) — The Threads API from LiveChat — 4 operation(s) for threads.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-30
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### LiveChat Agent Chat API
+Model Context Protocol servers that expose the API to agents.
 
-REST and RTM APIs for agents to manage chats, send messages, transfer conversations, and update statuses. Authenticated with OAuth 2.1 bearer tokens or Personal Access Tokens.
+- [livechat](https://apis.io/servers/livechat/livechat/)
 
-- **Human URL:** [https://platform.text.com/docs/messaging/agent-chat-api](https://platform.text.com/docs/messaging/agent-chat-api)
-- **Base URL:** `https://api.livechatinc.com/v3.5/agent`
+#### Agentic access (1)
 
-#### Tags
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- Agents
-- Chats
-- Messaging
+- [Livechat Agentic Access](https://apis.io/agentic-access/livechat/livechat-agentic-access/)
 
-#### Properties
+#### Collections (9)
 
-- [Documentation](https://platform.text.com/docs/messaging/agent-chat-api)
-- [Postman Collection](collections/livechat.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/livechat.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### LiveChat Customer Chat API
+- [LiveChat Agent Chat API](https://apis.io/collections/livechat/open-livechat/)
+- [LiveChat Webhooks and RTM API](https://apis.io/collections/livechat/open-livechat-asyncapi/)
+- [LiveChat Agent Chat Chats API](https://apis.io/collections/livechat/open-livechat-chats-api/)
+- [LiveChat Agent Chat Chats Customers API](https://apis.io/collections/livechat/open-livechat-customers-api/)
+- [LiveChat Agent Chat Chats Events API](https://apis.io/collections/livechat/open-livechat-events-api/)
+- [LiveChat Agent Chat Chats Other API](https://apis.io/collections/livechat/open-livechat-other-api/)
+- [LiveChat Agent Chat Chats Properties API](https://apis.io/collections/livechat/open-livechat-properties-api/)
+- [LiveChat Agent Chat Chats Status API](https://apis.io/collections/livechat/open-livechat-status-api/)
+- [LiveChat Agent Chat Chats Threads API](https://apis.io/collections/livechat/open-livechat-threads-api/)
 
-REST and RTM APIs for customers to start and participate in chats with agents on LiveChat-powered websites. Uses customer access tokens.
+#### Security (2)
 
-- **Human URL:** [https://platform.text.com/docs/messaging/customer-chat-api](https://platform.text.com/docs/messaging/customer-chat-api)
-- **Base URL:** `https://api.livechatinc.com/v3.5/customer`
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Livechat Authentication](https://apis.io/security/livechat/livechat-authentication/)
+- [Livechat Domain Security](https://apis.io/security/livechat/livechat-domain-security/)
 
-- Customers
-- Chats
-- Messaging
+## Where to find this API
 
-#### Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Documentation](https://platform.text.com/docs/messaging/customer-chat-api)
-- [Postman Collection](collections/livechat.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/livechat.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### LiveChat Configuration API
-
-Manage agents, groups, bots, tags, webhooks, properties, and other account configuration for a LiveChat organization.
-
-- **Human URL:** [https://platform.text.com/docs/management/configuration-api](https://platform.text.com/docs/management/configuration-api)
-- **Base URL:** `https://api.livechatinc.com/v3.5/configuration`
-
-#### Tags
-
-- Configuration
-- Agents
-- Webhooks
-- Bots
-
-#### Properties
-
-- [Documentation](https://platform.text.com/docs/management/configuration-api)
-- [Postman Collection](collections/livechat.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/livechat.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### LiveChat Webhooks and RTM API
-
-Asynchronous event surfaces for LiveChat. HTTP webhooks registered through the Configuration API and the Agent Chat Real-Time Messaging (RTM) WebSocket API share the same event payloads (incoming_chat, incoming_event, chat_user_added, chat_user_removed, customer_updated, agent_*, bot_*, group_*, and more).
-
-- **Human URL:** [https://platform.text.com/docs/messaging/agent-chat-api](https://platform.text.com/docs/messaging/agent-chat-api)
-- **Base URL:** `wss://api.livechatinc.com/v3.5/agent/rtm/ws`
-
-#### Tags
-
-- Webhooks
-- Real-Time Messaging
-- WebSocket
-- Events
-
-#### Properties
-
-- [Documentation](https://platform.text.com/docs/messaging/agent-chat-api)
-- [AsyncAPI](https://raw.githubusercontent.com/api-evangelist/livechat/refs/heads/main/openapi/livechat-asyncapi.yml) — [AsyncAPI Specification](https://www.asyncapi.com/docs/reference/specification/latest)
-- [Postman Collection](collections/livechat.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/livechat.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### LiveChat Reports API
-
-Retrieve reporting data for chats, agents, tags, and customer activity across the LiveChat organization.
-
-- **Human URL:** [https://platform.text.com/docs/data-reporting/reports-api](https://platform.text.com/docs/data-reporting/reports-api)
-- **Base URL:** `https://api.livechatinc.com/v3.5/reports`
-
-#### Tags
-
-- Reporting
-- Analytics
-- Metrics
-
-#### Properties
-
-- [Documentation](https://platform.text.com/docs/data-reporting/reports-api)
-- [Postman Collection](collections/livechat.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/livechat.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/showcase/livechatcom)
 - [Website](https://www.livechat.com)
 - [Documentation](https://platform.text.com/docs)
-- [Developer  Console](https://developers.livechat.com/console)
-- [GitHub Organization](https://github.com/livechat)
-- [Sign Up](https://accounts.livechat.com/signup)
 - [Pricing](https://www.livechat.com/pricing/)
+- [Blog](https://www.livechat.com/success/)
+- [GitHub](https://github.com/livechat)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.6** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 54.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 23.7 |
+
+**Agent readiness 47.1** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/livechat/](https://apis.io/providers/livechat/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LiveChat: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/livechat/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
